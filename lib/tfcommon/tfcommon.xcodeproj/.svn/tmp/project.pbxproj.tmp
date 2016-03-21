@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18590F951A831A2E00E8B2F1 /* libsbjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F88685515CBB6CF004E09D7 /* libsbjson.a */; };
+		1872C8B71A24207C00EBCFCF /* CheckJailBroken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1872C8B61A24207C00EBCFCF /* CheckJailBroken.m */; };
+		188C5BB01921E83A00ED14BC /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 188C5BAD1921E83A00ED14BC /* GTMBase64.h */; };
+		188C5BB11921E83A00ED14BC /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 188C5BAE1921E83A00ED14BC /* GTMDefines.h */; };
+		188C5BB21921E83A00ED14BC /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 188C5BAF1921E83A00ED14BC /* KeychainItemWrapper.h */; };
+		188C5BB51921E85200ED14BC /* SPSJsonWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 188C5BB31921E85200ED14BC /* SPSJsonWrapper.h */; };
+		188C5BB61921E85200ED14BC /* SPSJsonWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C5BB41921E85200ED14BC /* SPSJsonWrapper.m */; };
+		188C5BB81921E8F600ED14BC /* TFCommonDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 188C5BB71921E8F600ED14BC /* TFCommonDefine.m */; };
+		188C5BBA1921E90B00ED14BC /* TFKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 188C5BB91921E90B00ED14BC /* TFKeychain.h */; };
+		18A257BE1A6E024400245522 /* NSData+Base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A257BD1A6E024400245522 /* NSData+Base64.h */; };
+		18A257C01A6E024D00245522 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A257BF1A6E024D00245522 /* NSData+Base64.m */; };
+		18AFEBF61C7EF1A500847249 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AFEBF51C7EF1A500847249 /* WebP.framework */; };
+		18AFEBF91C7EF1F800847249 /* TFWebPConvertData.h in Headers */ = {isa = PBXBuildFile; fileRef = 18AFEBF71C7EF1F800847249 /* TFWebPConvertData.h */; };
+		18AFEBFA1C7EF1F800847249 /* UIImage+WebP.h in Headers */ = {isa = PBXBuildFile; fileRef = 18AFEBF81C7EF1F800847249 /* UIImage+WebP.h */; };
+		18AFEBFC1C7EF21700847249 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFEBFB1C7EF21700847249 /* UIImage+WebP.m */; };
+		18AFEBFE1C7EF22200847249 /* TFWebPConvertData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFEBFD1C7EF22200847249 /* TFWebPConvertData.m */; };
+		18CB599318FCD4230007B81F /* OpenUDID.h in Headers */ = {isa = PBXBuildFile; fileRef = 18CB599118FCD4230007B81F /* OpenUDID.h */; };
+		18CB599418FCD4230007B81F /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CB599218FCD4230007B81F /* OpenUDID.m */; };
+		18F2A6981A52B2520084251E /* TFSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F2A6971A52B2520084251E /* TFSwitchButton.m */; };
+		18F2A69A1A52B2740084251E /* TFSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F2A6991A52B2740084251E /* TFSwitchButton.h */; };
+		1F0B89C615CA55F60028870F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0B89C515CA55F60028870F /* Foundation.framework */; };
+		1F0B89E715CA6F400028870F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B89E615CA6F400028870F /* main.m */; };
+		1F105017160719C40069F7F2 /* TFShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F105015160719C40069F7F2 /* TFShareKit.m */; };
+		1F105036160722470069F7F2 /* TFShareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F105035160722470069F7F2 /* TFShareKit.h */; };
+		1F19FA9215F71FA2001462C2 /* TFLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F19FA9015F71FA2001462C2 /* TFLocation.m */; };
+		1F19FA9515F72291001462C2 /* TFLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F19FA9415F72291001462C2 /* TFLocation.h */; };
+		1F1FBB2D1675ADD800071161 /* TFDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F1FBB2C1675ADD800071161 /* TFDictionary.h */; };
+		1F2D4CC61670A1A0001B1B63 /* TFDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D4CC41670A1A0001B1B63 /* TFDictionary.m */; };
+		1F48B78E15F5D1F5001019A7 /* TFDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F48B78C15F5D1F5001019A7 /* TFDeviceInfo.m */; };
+		1F48B79115F5D3AE001019A7 /* TFDeviceInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F48B79015F5D3AE001019A7 /* TFDeviceInfo.h */; };
+		1F48B79B15F5D769001019A7 /* TFCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F48B79915F5D769001019A7 /* TFCommand.m */; };
+		1F48B7A315F5D7A3001019A7 /* TripleDesTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F48B7A115F5D7A3001019A7 /* TripleDesTool.m */; };
+		1F48B7A815F5D7B0001019A7 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F48B7A515F5D7B0001019A7 /* GTMBase64.m */; };
+		1F48B7AE15F5D912001019A7 /* TFCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F48B7AB15F5D912001019A7 /* TFCommand.h */; };
+		1F5A776D16BEB93D0073BCCE /* GCDCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5A776B16BEB93C0073BCCE /* GCDCenter.m */; };
+		1F5A779516BEB9E70073BCCE /* GCDCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5A779416BEB9E70073BCCE /* GCDCenter.h */; };
+		1F5E30B115EF5614002C4C2E /* TFFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E30AF15EF5614002C4C2E /* TFFile.m */; };
+		1F5E30B915EF5EB6002C4C2E /* TFCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5E30B715EF5EB5002C4C2E /* TFCrashHandler.m */; };
+		1F5E30BC15EF6174002C4C2E /* TFCrashHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5E30BA15EF6174002C4C2E /* TFCrashHandler.h */; };
+		1F5E30BD15EF6174002C4C2E /* TFFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F5E30BB15EF6174002C4C2E /* TFFile.h */; };
+		1F648F16167ECB3300C63697 /* TFNetDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F648F15167ECB3300C63697 /* TFNetDispatch.h */; };
+		1F86F62E15FF046F00D47B1E /* TripleDesTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F86F62D15FF046F00D47B1E /* TripleDesTool.h */; };
+		1F90EF1715EDFBD400F2E132 /* TFBaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF0815EDFBD400F2E132 /* TFBaseViewModel.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF1815EDFBD400F2E132 /* TFCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF0915EDFBD400F2E132 /* TFCache.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF1915EDFBD400F2E132 /* TFCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF0A15EDFBD400F2E132 /* TFCommon.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF1A15EDFBD400F2E132 /* TFCommonDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF0B15EDFBD400F2E132 /* TFCommonDefine.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF1B15EDFBD400F2E132 /* TFDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF0C15EDFBD400F2E132 /* TFDataModel.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF1C15EDFBD400F2E132 /* TFImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF0D15EDFBD400F2E132 /* TFImageLoader.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF1E15EDFBD400F2E132 /* TFMemoryAllocTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF0F15EDFBD400F2E132 /* TFMemoryAllocTable.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF2315EDFBD400F2E132 /* TFScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF1415EDFBD400F2E132 /* TFScrollView.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF2415EDFBD400F2E132 /* TFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF1515EDFBD400F2E132 /* TFViewController.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF3015EDFE8900F2E132 /* TFDoubleSidedLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF2D15EDFE8900F2E132 /* TFDoubleSidedLayer.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF3115EDFE8900F2E132 /* TFGradientOverlayLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF2E15EDFE8900F2E132 /* TFGradientOverlayLayer.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF3215EDFE8900F2E132 /* TFTickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF2F15EDFE8900F2E132 /* TFTickerView.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF4215EE003300F2E132 /* TFDoubleSidedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF3B15EE003300F2E132 /* TFDoubleSidedLayer.m */; };
+		1F90EF4315EE003300F2E132 /* TFGradientOverlayLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF3C15EE003300F2E132 /* TFGradientOverlayLayer.m */; };
+		1F90EF4415EE003300F2E132 /* TFImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF3D15EE003300F2E132 /* TFImageLoader.m */; };
+		1F90EF4615EE003300F2E132 /* TFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF3F15EE003300F2E132 /* TFScrollView.m */; };
+		1F90EF4715EE003300F2E132 /* TFTickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF4015EE003300F2E132 /* TFTickerView.m */; };
+		1F90EF4815EE003300F2E132 /* TFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF4115EE003300F2E132 /* TFViewController.m */; };
+		1F90EF4D15EE019900F2E132 /* TFSmartItemBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF4A15EE019900F2E132 /* TFSmartItemBean.m */; };
+		1F90EF4E15EE019900F2E132 /* TFSmartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F90EF4B15EE019900F2E132 /* TFSmartView.m */; };
+		1F90EF5315EE01E900F2E132 /* TFSmartItemBean.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF5015EE01E900F2E132 /* TFSmartItemBean.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF5415EE01E900F2E132 /* TFSmartView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF5115EE01E900F2E132 /* TFSmartView.h */; settings = {ATTRIBUTES = (); }; };
+		1F90EF5615EE028100F2E132 /* SpacemanBlocks.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F90EF5515EE028000F2E132 /* SpacemanBlocks.h */; settings = {ATTRIBUTES = (); }; };
+		1FD80C4D15D501690037C775 /* TFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD80C3315D501690037C775 /* TFCache.m */; };
+		1FD80C4F15D501690037C775 /* TFMemoryAllocTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD80C3515D501690037C775 /* TFMemoryAllocTable.m */; };
+		1FD80C5715D501690037C775 /* TFBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD80C3E15D501690037C775 /* TFBaseViewModel.m */; };
+		1FD80C5915D501690037C775 /* TFDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD80C4015D501690037C775 /* TFDataModel.m */; };
+		1FF3B9F817CCA1A400575B85 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF3B9F417CCA1A400575B85 /* KeychainItemWrapper.m */; };
+		1FF3B9FA17CCA1A400575B85 /* TFKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF3B9F617CCA1A400575B85 /* TFKeychain.m */; };
+		1FF82699162AB18000D89FBE /* TFGenieView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FF82697162AB18000D89FBE /* TFGenieView.m */; };
+		1FF8269C162AB1B300D89FBE /* TFGenieView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF8269B162AB1B300D89FBE /* TFGenieView.h */; };
+		1FF9AD9F167C6C1C0023681C /* TFDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FF9AD9E167C6C1C0023681C /* TFDispatch.h */; };
+		1FFFD7BF16005AA7009D05B9 /* TFPatternView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFD7BD16005AA7009D05B9 /* TFPatternView.m */; };
+		1FFFD7C216005AD0009D05B9 /* TFPatternView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFFD7C116005AD0009D05B9 /* TFPatternView.h */; };
+		2C9690D41C7175F90079AAF8 /* TFURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9690D21C7175F90079AAF8 /* TFURLConnection.m */; };
+		2C9690D91C7176580079AAF8 /* TFURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9690D81C7176580079AAF8 /* TFURLCache.m */; };
+		2C9690DB1C7176E20079AAF8 /* TFModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9690DA1C7176E20079AAF8 /* TFModel.m */; };
+		2C9690DD1C7176EA0079AAF8 /* TFModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9690DC1C7176EA0079AAF8 /* TFModel.h */; };
+		2C9690E71C7177E50079AAF8 /* TFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9690E61C7177E50079AAF8 /* TFObject.m */; };
+		2C9690EA1C71781A0079AAF8 /* TFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9690E81C71781A0079AAF8 /* TFObject.h */; };
+		2C9690EB1C71781A0079AAF8 /* TFLibChannelProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9690E91C71781A0079AAF8 /* TFLibChannelProtocol.h */; };
+		2C9690ED1C7178540079AAF8 /* TFTraffic.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9690EC1C7178540079AAF8 /* TFTraffic.h */; };
+		2C9690EF1C71785E0079AAF8 /* TFTraffic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9690EE1C71785E0079AAF8 /* TFTraffic.m */; };
+		2C9691061C717EF20079AAF8 /* tfthreadpool.s in Sources */ = {isa = PBXBuildFile; fileRef = 2C9691031C717EF20079AAF8 /* tfthreadpool.s */; };
+		2C9691071C717EF20079AAF8 /* tfthreadpool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9691041C717EF20079AAF8 /* tfthreadpool.h */; };
+		2C9691081C717EF20079AAF8 /* tfthreadpool.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C9691051C717EF20079AAF8 /* tfthreadpool.c */; };
+		2C96911F1C719DF10079AAF8 /* TFHTTPData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C96911B1C719DF10079AAF8 /* TFHTTPData.m */; };
+		2C9691211C719DF10079AAF8 /* TFHTTP.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C96911D1C719DF10079AAF8 /* TFHTTP.m */; };
+		2C9691241C719E290079AAF8 /* GZipTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C9691231C719E290079AAF8 /* GZipTool.h */; };
+		2C9691261C719E480079AAF8 /* GZipTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C9691251C719E480079AAF8 /* GZipTool.m */; };
+		2CAAA20C1C71A12F00D9397B /* TFHTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAAA20B1C71A12F00D9397B /* TFHTTP.h */; };
+		2CAAA20E1C71A16300D9397B /* TFHTTPData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAAA20D1C71A16300D9397B /* TFHTTPData.h */; };
+		2CAAA2101C71A19D00D9397B /* TFURLConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAAA20F1C71A19D00D9397B /* TFURLConnection.h */; };
+		2CAAA2121C71A1CA00D9397B /* TFURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAAA2111C71A1CA00D9397B /* TFURLCache.h */; };
+		2CAAA2221C71A52800D9397B /* TFNetExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAAA2211C71A52800D9397B /* TFNetExecutor.h */; };
+		2CAAA2241C71A55300D9397B /* TFNetExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAAA2231C71A55300D9397B /* TFNetExecutor.m */; };
+		2CAAA2701C730B7000D9397B /* TFViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAAA26F1C730B7000D9397B /* TFViewModel.h */; };
+		2CAAA2721C730B9C00D9397B /* TFViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAAA2711C730B9C00D9397B /* TFViewModel.m */; };
+		2CB73E371C75709F00A723A1 /* TFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB73E361C75709F00A723A1 /* TFImageView.m */; };
+		2CB73E391C7570A700A723A1 /* TFImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB73E381C7570A700A723A1 /* TFImageView.h */; };
+		2CB73E3C1C75725200A723A1 /* TFSmartItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB73E3B1C75725200A723A1 /* TFSmartItem.m */; };
+		2CB73E3E1C75725C00A723A1 /* TFSmartItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CB73E3D1C75725C00A723A1 /* TFSmartItem.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18590F931A831A2A00E8B2F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F88684D15CBB6CF004E09D7 /* sbjson.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 15D08FA71581E629000A7415;
+			remoteInfo = sbjson;
+		};
+		1F88685415CBB6CF004E09D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F88684D15CBB6CF004E09D7 /* sbjson.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 15D08FA81581E629000A7415;
+			remoteInfo = sbjson;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1872C8B51A24203B00EBCFCF /* CheckJailBroken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckJailBroken.h; sourceTree = "<group>"; };
+		1872C8B61A24207C00EBCFCF /* CheckJailBroken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckJailBroken.m; sourceTree = "<group>"; };
+		188C5BAD1921E83A00ED14BC /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		188C5BAE1921E83A00ED14BC /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		188C5BAF1921E83A00ED14BC /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		188C5BB31921E85200ED14BC /* SPSJsonWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSJsonWrapper.h; sourceTree = "<group>"; };
+		188C5BB41921E85200ED14BC /* SPSJsonWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSJsonWrapper.m; sourceTree = "<group>"; };
+		188C5BB71921E8F600ED14BC /* TFCommonDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFCommonDefine.m; sourceTree = "<group>"; };
+		188C5BB91921E90B00ED14BC /* TFKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFKeychain.h; sourceTree = "<group>"; };
+		18A257BD1A6E024400245522 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		18A257BF1A6E024D00245522 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		18AFEBF51C7EF1A500847249 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = tfcommon/WebP.framework; sourceTree = "<group>"; };
+		18AFEBF71C7EF1F800847249 /* TFWebPConvertData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFWebPConvertData.h; sourceTree = "<group>"; };
+		18AFEBF81C7EF1F800847249 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebP.h"; sourceTree = "<group>"; };
+		18AFEBFB1C7EF21700847249 /* UIImage+WebP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebP.m"; sourceTree = "<group>"; };
+		18AFEBFD1C7EF22200847249 /* TFWebPConvertData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFWebPConvertData.m; sourceTree = "<group>"; };
+		18CB599118FCD4230007B81F /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		18CB599218FCD4230007B81F /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		18F2A6971A52B2520084251E /* TFSwitchButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSwitchButton.m; sourceTree = "<group>"; };
+		18F2A6991A52B2740084251E /* TFSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSwitchButton.h; sourceTree = "<group>"; };
+		1F0B89C215CA55F60028870F /* libtfcommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtfcommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0B89C515CA55F60028870F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F0B89C915CA55F60028870F /* tfcommon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tfcommon-Prefix.pch"; sourceTree = "<group>"; };
+		1F0B89E615CA6F400028870F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F105015160719C40069F7F2 /* TFShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFShareKit.m; sourceTree = "<group>"; };
+		1F105035160722470069F7F2 /* TFShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFShareKit.h; sourceTree = "<group>"; };
+		1F19FA9015F71FA2001462C2 /* TFLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFLocation.m; sourceTree = "<group>"; };
+		1F19FA9415F72291001462C2 /* TFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLocation.h; sourceTree = "<group>"; };
+		1F1FBB2C1675ADD800071161 /* TFDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDictionary.h; sourceTree = "<group>"; };
+		1F2D4CC41670A1A0001B1B63 /* TFDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDictionary.m; sourceTree = "<group>"; };
+		1F48B78C15F5D1F5001019A7 /* TFDeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDeviceInfo.m; sourceTree = "<group>"; };
+		1F48B79015F5D3AE001019A7 /* TFDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDeviceInfo.h; sourceTree = "<group>"; };
+		1F48B79915F5D769001019A7 /* TFCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFCommand.m; sourceTree = "<group>"; };
+		1F48B7A115F5D7A3001019A7 /* TripleDesTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripleDesTool.m; sourceTree = "<group>"; };
+		1F48B7A515F5D7B0001019A7 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		1F48B7AB15F5D912001019A7 /* TFCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFCommand.h; sourceTree = "<group>"; };
+		1F5A776B16BEB93C0073BCCE /* GCDCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDCenter.m; path = core/GCDCenter.m; sourceTree = "<group>"; };
+		1F5A779416BEB9E70073BCCE /* GCDCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDCenter.h; sourceTree = "<group>"; };
+		1F5E30AF15EF5614002C4C2E /* TFFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFFile.m; sourceTree = "<group>"; };
+		1F5E30B715EF5EB5002C4C2E /* TFCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFCrashHandler.m; sourceTree = "<group>"; };
+		1F5E30BA15EF6174002C4C2E /* TFCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFCrashHandler.h; sourceTree = "<group>"; };
+		1F5E30BB15EF6174002C4C2E /* TFFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFFile.h; sourceTree = "<group>"; };
+		1F648F15167ECB3300C63697 /* TFNetDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFNetDispatch.h; sourceTree = "<group>"; };
+		1F86F62D15FF046F00D47B1E /* TripleDesTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripleDesTool.h; sourceTree = "<group>"; };
+		1F88684D15CBB6CF004E09D7 /* sbjson.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = sbjson.xcodeproj; path = ../sbjson/sbjson.xcodeproj; sourceTree = "<group>"; };
+		1F90EF0815EDFBD400F2E132 /* TFBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFBaseViewModel.h; sourceTree = "<group>"; };
+		1F90EF0915EDFBD400F2E132 /* TFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFCache.h; sourceTree = "<group>"; };
+		1F90EF0A15EDFBD400F2E132 /* TFCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFCommon.h; sourceTree = "<group>"; };
+		1F90EF0B15EDFBD400F2E132 /* TFCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFCommonDefine.h; sourceTree = "<group>"; };
+		1F90EF0C15EDFBD400F2E132 /* TFDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDataModel.h; sourceTree = "<group>"; };
+		1F90EF0D15EDFBD400F2E132 /* TFImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFImageLoader.h; sourceTree = "<group>"; };
+		1F90EF0F15EDFBD400F2E132 /* TFMemoryAllocTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFMemoryAllocTable.h; sourceTree = "<group>"; };
+		1F90EF1415EDFBD400F2E132 /* TFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFScrollView.h; sourceTree = "<group>"; };
+		1F90EF1515EDFBD400F2E132 /* TFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFViewController.h; sourceTree = "<group>"; };
+		1F90EF2D15EDFE8900F2E132 /* TFDoubleSidedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDoubleSidedLayer.h; sourceTree = "<group>"; };
+		1F90EF2E15EDFE8900F2E132 /* TFGradientOverlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFGradientOverlayLayer.h; sourceTree = "<group>"; };
+		1F90EF2F15EDFE8900F2E132 /* TFTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTickerView.h; sourceTree = "<group>"; };
+		1F90EF3B15EE003300F2E132 /* TFDoubleSidedLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDoubleSidedLayer.m; sourceTree = "<group>"; };
+		1F90EF3C15EE003300F2E132 /* TFGradientOverlayLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGradientOverlayLayer.m; sourceTree = "<group>"; };
+		1F90EF3D15EE003300F2E132 /* TFImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFImageLoader.m; sourceTree = "<group>"; };
+		1F90EF3F15EE003300F2E132 /* TFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFScrollView.m; sourceTree = "<group>"; };
+		1F90EF4015EE003300F2E132 /* TFTickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTickerView.m; sourceTree = "<group>"; };
+		1F90EF4115EE003300F2E132 /* TFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFViewController.m; sourceTree = "<group>"; };
+		1F90EF4A15EE019900F2E132 /* TFSmartItemBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSmartItemBean.m; sourceTree = "<group>"; };
+		1F90EF4B15EE019900F2E132 /* TFSmartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSmartView.m; sourceTree = "<group>"; };
+		1F90EF5015EE01E900F2E132 /* TFSmartItemBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSmartItemBean.h; sourceTree = "<group>"; };
+		1F90EF5115EE01E900F2E132 /* TFSmartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSmartView.h; sourceTree = "<group>"; };
+		1F90EF5515EE028000F2E132 /* SpacemanBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpacemanBlocks.h; sourceTree = "<group>"; };
+		1FD80C3315D501690037C775 /* TFCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFCache.m; sourceTree = "<group>"; };
+		1FD80C3515D501690037C775 /* TFMemoryAllocTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFMemoryAllocTable.m; sourceTree = "<group>"; };
+		1FD80C3E15D501690037C775 /* TFBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFBaseViewModel.m; sourceTree = "<group>"; };
+		1FD80C4015D501690037C775 /* TFDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFDataModel.m; sourceTree = "<group>"; };
+		1FF3B9F417CCA1A400575B85 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		1FF3B9F617CCA1A400575B85 /* TFKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFKeychain.m; sourceTree = "<group>"; };
+		1FF82697162AB18000D89FBE /* TFGenieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFGenieView.m; sourceTree = "<group>"; };
+		1FF8269B162AB1B300D89FBE /* TFGenieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFGenieView.h; sourceTree = "<group>"; };
+		1FF9AD9E167C6C1C0023681C /* TFDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFDispatch.h; sourceTree = "<group>"; };
+		1FFFD7BD16005AA7009D05B9 /* TFPatternView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFPatternView.m; sourceTree = "<group>"; };
+		1FFFD7C116005AD0009D05B9 /* TFPatternView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFPatternView.h; sourceTree = "<group>"; };
+		2C9690D21C7175F90079AAF8 /* TFURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFURLConnection.m; sourceTree = "<group>"; };
+		2C9690D81C7176580079AAF8 /* TFURLCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFURLCache.m; sourceTree = "<group>"; };
+		2C9690DA1C7176E20079AAF8 /* TFModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFModel.m; sourceTree = "<group>"; };
+		2C9690DC1C7176EA0079AAF8 /* TFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFModel.h; sourceTree = "<group>"; };
+		2C9690E61C7177E50079AAF8 /* TFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFObject.m; sourceTree = "<group>"; };
+		2C9690E81C71781A0079AAF8 /* TFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFObject.h; sourceTree = "<group>"; };
+		2C9690E91C71781A0079AAF8 /* TFLibChannelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFLibChannelProtocol.h; sourceTree = "<group>"; };
+		2C9690EC1C7178540079AAF8 /* TFTraffic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFTraffic.h; sourceTree = "<group>"; };
+		2C9690EE1C71785E0079AAF8 /* TFTraffic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFTraffic.m; sourceTree = "<group>"; };
+		2C9691031C717EF20079AAF8 /* tfthreadpool.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = tfthreadpool.s; sourceTree = "<group>"; };
+		2C9691041C717EF20079AAF8 /* tfthreadpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tfthreadpool.h; sourceTree = "<group>"; };
+		2C9691051C717EF20079AAF8 /* tfthreadpool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tfthreadpool.c; sourceTree = "<group>"; };
+		2C96911B1C719DF10079AAF8 /* TFHTTPData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHTTPData.m; sourceTree = "<group>"; };
+		2C96911D1C719DF10079AAF8 /* TFHTTP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHTTP.m; sourceTree = "<group>"; };
+		2C9691231C719E290079AAF8 /* GZipTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GZipTool.h; sourceTree = "<group>"; };
+		2C9691251C719E480079AAF8 /* GZipTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GZipTool.m; sourceTree = "<group>"; };
+		2CAAA20B1C71A12F00D9397B /* TFHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHTTP.h; sourceTree = "<group>"; };
+		2CAAA20D1C71A16300D9397B /* TFHTTPData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHTTPData.h; sourceTree = "<group>"; };
+		2CAAA20F1C71A19D00D9397B /* TFURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFURLConnection.h; sourceTree = "<group>"; };
+		2CAAA2111C71A1CA00D9397B /* TFURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFURLCache.h; sourceTree = "<group>"; };
+		2CAAA2211C71A52800D9397B /* TFNetExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFNetExecutor.h; sourceTree = "<group>"; };
+		2CAAA2231C71A55300D9397B /* TFNetExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFNetExecutor.m; sourceTree = "<group>"; };
+		2CAAA26F1C730B7000D9397B /* TFViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFViewModel.h; sourceTree = "<group>"; };
+		2CAAA2711C730B9C00D9397B /* TFViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFViewModel.m; sourceTree = "<group>"; };
+		2CB73E361C75709F00A723A1 /* TFImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFImageView.m; sourceTree = "<group>"; };
+		2CB73E381C7570A700A723A1 /* TFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFImageView.h; sourceTree = "<group>"; };
+		2CB73E3B1C75725200A723A1 /* TFSmartItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFSmartItem.m; sourceTree = "<group>"; };
+		2CB73E3D1C75725C00A723A1 /* TFSmartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFSmartItem.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F0B89BF15CA55F60028870F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AFEBF61C7EF1A500847249 /* WebP.framework in Frameworks */,
+				18590F951A831A2E00E8B2F1 /* libsbjson.a in Frameworks */,
+				1F0B89C615CA55F60028870F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F0B89B715CA55F60028870F = {
+			isa = PBXGroup;
+			children = (
+				18AFEBF51C7EF1A500847249 /* WebP.framework */,
+				1F0B89C715CA55F60028870F /* tfcommon */,
+				1F0B89C415CA55F60028870F /* Frameworks */,
+				1F0B89C315CA55F60028870F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F0B89C315CA55F60028870F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F0B89C215CA55F60028870F /* libtfcommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F0B89C415CA55F60028870F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F88684D15CBB6CF004E09D7 /* sbjson.xcodeproj */,
+				1F0B89C515CA55F60028870F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F0B89C715CA55F60028870F /* tfcommon */ = {
+			isa = PBXGroup;
+			children = (
+				188C5BB31921E85200ED14BC /* SPSJsonWrapper.h */,
+				188C5BB41921E85200ED14BC /* SPSJsonWrapper.m */,
+				18CB599118FCD4230007B81F /* OpenUDID.h */,
+				18CB599218FCD4230007B81F /* OpenUDID.m */,
+				BA42CE39A92E50CD0AEEEA74 /* backend */,
+				1F48B79315F5D715001019A7 /* command */,
+				1F90EF3A15EE003300F2E132 /* uikit */,
+				1F90EEE815EDFAAA00F2E132 /* include */,
+				1FD80C3115D501690037C775 /* core */,
+				1FD80C3C15D501690037C775 /* model */,
+				1F0B89E615CA6F400028870F /* main.m */,
+				1F0B89C815CA55F60028870F /* Supporting Files */,
+				1F5A776B16BEB93C0073BCCE /* GCDCenter.m */,
+			);
+			path = tfcommon;
+			sourceTree = "<group>";
+		};
+		1F0B89C815CA55F60028870F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F0B89C915CA55F60028870F /* tfcommon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F48B79315F5D715001019A7 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				2C9691251C719E480079AAF8 /* GZipTool.m */,
+				18A257BF1A6E024D00245522 /* NSData+Base64.m */,
+				188C5BB71921E8F600ED14BC /* TFCommonDefine.m */,
+				1F48B7A515F5D7B0001019A7 /* GTMBase64.m */,
+				1F48B7A115F5D7A3001019A7 /* TripleDesTool.m */,
+				1F48B79915F5D769001019A7 /* TFCommand.m */,
+			);
+			path = command;
+			sourceTree = "<group>";
+		};
+		1F88684E15CBB6CF004E09D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F88685515CBB6CF004E09D7 /* libsbjson.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F90EEE815EDFAAA00F2E132 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				18AFEBF71C7EF1F800847249 /* TFWebPConvertData.h */,
+				18AFEBF81C7EF1F800847249 /* UIImage+WebP.h */,
+				2C9691231C719E290079AAF8 /* GZipTool.h */,
+				2CAAA2211C71A52800D9397B /* TFNetExecutor.h */,
+				18A257BD1A6E024400245522 /* NSData+Base64.h */,
+				2CAAA20B1C71A12F00D9397B /* TFHTTP.h */,
+				188C5BB91921E90B00ED14BC /* TFKeychain.h */,
+				188C5BAD1921E83A00ED14BC /* GTMBase64.h */,
+				188C5BAE1921E83A00ED14BC /* GTMDefines.h */,
+				188C5BAF1921E83A00ED14BC /* KeychainItemWrapper.h */,
+				2CAAA2111C71A1CA00D9397B /* TFURLCache.h */,
+				2CAAA20D1C71A16300D9397B /* TFHTTPData.h */,
+				2CAAA20F1C71A19D00D9397B /* TFURLConnection.h */,
+				1F5A779416BEB9E70073BCCE /* GCDCenter.h */,
+				2CAAA26F1C730B7000D9397B /* TFViewModel.h */,
+				1F648F15167ECB3300C63697 /* TFNetDispatch.h */,
+				1FF9AD9E167C6C1C0023681C /* TFDispatch.h */,
+				1F1FBB2C1675ADD800071161 /* TFDictionary.h */,
+				1FF8269B162AB1B300D89FBE /* TFGenieView.h */,
+				1F105035160722470069F7F2 /* TFShareKit.h */,
+				1FFFD7C116005AD0009D05B9 /* TFPatternView.h */,
+				1F86F62D15FF046F00D47B1E /* TripleDesTool.h */,
+				1F19FA9415F72291001462C2 /* TFLocation.h */,
+				1F48B7AB15F5D912001019A7 /* TFCommand.h */,
+				1F48B79015F5D3AE001019A7 /* TFDeviceInfo.h */,
+				1F5E30BA15EF6174002C4C2E /* TFCrashHandler.h */,
+				1F5E30BB15EF6174002C4C2E /* TFFile.h */,
+				1F90EF5515EE028000F2E132 /* SpacemanBlocks.h */,
+				1F90EF5015EE01E900F2E132 /* TFSmartItemBean.h */,
+				2CB73E3D1C75725C00A723A1 /* TFSmartItem.h */,
+				1F90EF5115EE01E900F2E132 /* TFSmartView.h */,
+				1F90EF2D15EDFE8900F2E132 /* TFDoubleSidedLayer.h */,
+				1F90EF2E15EDFE8900F2E132 /* TFGradientOverlayLayer.h */,
+				1F90EF2F15EDFE8900F2E132 /* TFTickerView.h */,
+				1F90EF0815EDFBD400F2E132 /* TFBaseViewModel.h */,
+				1F90EF0915EDFBD400F2E132 /* TFCache.h */,
+				1F90EF0A15EDFBD400F2E132 /* TFCommon.h */,
+				1F90EF0B15EDFBD400F2E132 /* TFCommonDefine.h */,
+				2C9690DC1C7176EA0079AAF8 /* TFModel.h */,
+				1F90EF0C15EDFBD400F2E132 /* TFDataModel.h */,
+				2CB73E381C7570A700A723A1 /* TFImageView.h */,
+				1F90EF0D15EDFBD400F2E132 /* TFImageLoader.h */,
+				1F90EF0F15EDFBD400F2E132 /* TFMemoryAllocTable.h */,
+				1F90EF1415EDFBD400F2E132 /* TFScrollView.h */,
+				1F90EF1515EDFBD400F2E132 /* TFViewController.h */,
+				1872C8B51A24203B00EBCFCF /* CheckJailBroken.h */,
+				18F2A6991A52B2740084251E /* TFSwitchButton.h */,
+				2C9690E81C71781A0079AAF8 /* TFObject.h */,
+				2C9690E91C71781A0079AAF8 /* TFLibChannelProtocol.h */,
+				2C9690EC1C7178540079AAF8 /* TFTraffic.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		1F90EF3A15EE003300F2E132 /* uikit */ = {
+			isa = PBXGroup;
+			children = (
+				1FFFD7BD16005AA7009D05B9 /* TFPatternView.m */,
+				1F90EF4A15EE019900F2E132 /* TFSmartItemBean.m */,
+				2CB73E3B1C75725200A723A1 /* TFSmartItem.m */,
+				1F90EF4B15EE019900F2E132 /* TFSmartView.m */,
+				1F90EF3B15EE003300F2E132 /* TFDoubleSidedLayer.m */,
+				1F90EF3C15EE003300F2E132 /* TFGradientOverlayLayer.m */,
+				1F90EF3D15EE003300F2E132 /* TFImageLoader.m */,
+				1F90EF3F15EE003300F2E132 /* TFScrollView.m */,
+				1F90EF4015EE003300F2E132 /* TFTickerView.m */,
+				1F90EF4115EE003300F2E132 /* TFViewController.m */,
+				1FF82697162AB18000D89FBE /* TFGenieView.m */,
+				18F2A6971A52B2520084251E /* TFSwitchButton.m */,
+			);
+			path = uikit;
+			sourceTree = "<group>";
+		};
+		1FD80C3115D501690037C775 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				18AFEBFB1C7EF21700847249 /* UIImage+WebP.m */,
+				1FF3B9F417CCA1A400575B85 /* KeychainItemWrapper.m */,
+				2C9691031C717EF20079AAF8 /* tfthreadpool.s */,
+				2C9691041C717EF20079AAF8 /* tfthreadpool.h */,
+				2C9691051C717EF20079AAF8 /* tfthreadpool.c */,
+				2CAAA2231C71A55300D9397B /* TFNetExecutor.m */,
+				1FF3B9F617CCA1A400575B85 /* TFKeychain.m */,
+				1FD80C3315D501690037C775 /* TFCache.m */,
+				1FD80C3515D501690037C775 /* TFMemoryAllocTable.m */,
+				2CB73E361C75709F00A723A1 /* TFImageView.m */,
+				1F5E30AF15EF5614002C4C2E /* TFFile.m */,
+				1F5E30B715EF5EB5002C4C2E /* TFCrashHandler.m */,
+				1F48B78C15F5D1F5001019A7 /* TFDeviceInfo.m */,
+				1F19FA9015F71FA2001462C2 /* TFLocation.m */,
+				1F105015160719C40069F7F2 /* TFShareKit.m */,
+				1872C8B61A24207C00EBCFCF /* CheckJailBroken.m */,
+				2C9690E61C7177E50079AAF8 /* TFObject.m */,
+				2C9690EE1C71785E0079AAF8 /* TFTraffic.m */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		1FD80C3C15D501690037C775 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1FD80C3E15D501690037C775 /* TFBaseViewModel.m */,
+				2CAAA2711C730B9C00D9397B /* TFViewModel.m */,
+				2C9690DA1C7176E20079AAF8 /* TFModel.m */,
+				1FD80C4015D501690037C775 /* TFDataModel.m */,
+				1F2D4CC41670A1A0001B1B63 /* TFDictionary.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA42CE39A92E50CD0AEEEA74 /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				18AFEBFD1C7EF22200847249 /* TFWebPConvertData.m */,
+				2C96911B1C719DF10079AAF8 /* TFHTTPData.m */,
+				2C96911D1C719DF10079AAF8 /* TFHTTP.m */,
+				2C9690D21C7175F90079AAF8 /* TFURLConnection.m */,
+				2C9690D81C7176580079AAF8 /* TFURLCache.m */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F0B89C015CA55F60028870F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C9691241C719E290079AAF8 /* GZipTool.h in Headers */,
+				2CAAA20E1C71A16300D9397B /* TFHTTPData.h in Headers */,
+				18CB599318FCD4230007B81F /* OpenUDID.h in Headers */,
+				1F90EF1715EDFBD400F2E132 /* TFBaseViewModel.h in Headers */,
+				2CAAA2701C730B7000D9397B /* TFViewModel.h in Headers */,
+				1F90EF1815EDFBD400F2E132 /* TFCache.h in Headers */,
+				2CAAA2101C71A19D00D9397B /* TFURLConnection.h in Headers */,
+				1F90EF1915EDFBD400F2E132 /* TFCommon.h in Headers */,
+				2C9690DD1C7176EA0079AAF8 /* TFModel.h in Headers */,
+				2C9690EB1C71781A0079AAF8 /* TFLibChannelProtocol.h in Headers */,
+				1F90EF1A15EDFBD400F2E132 /* TFCommonDefine.h in Headers */,
+				2CB73E391C7570A700A723A1 /* TFImageView.h in Headers */,
+				1F90EF1B15EDFBD400F2E132 /* TFDataModel.h in Headers */,
+				1F90EF1C15EDFBD400F2E132 /* TFImageLoader.h in Headers */,
+				2CAAA2221C71A52800D9397B /* TFNetExecutor.h in Headers */,
+				1F90EF1E15EDFBD400F2E132 /* TFMemoryAllocTable.h in Headers */,
+				2C9691071C717EF20079AAF8 /* tfthreadpool.h in Headers */,
+				18AFEBF91C7EF1F800847249 /* TFWebPConvertData.h in Headers */,
+				1F90EF2315EDFBD400F2E132 /* TFScrollView.h in Headers */,
+				1F90EF2415EDFBD400F2E132 /* TFViewController.h in Headers */,
+				2C9690ED1C7178540079AAF8 /* TFTraffic.h in Headers */,
+				1F90EF3015EDFE8900F2E132 /* TFDoubleSidedLayer.h in Headers */,
+				18F2A69A1A52B2740084251E /* TFSwitchButton.h in Headers */,
+				2CAAA2121C71A1CA00D9397B /* TFURLCache.h in Headers */,
+				2C9690EA1C71781A0079AAF8 /* TFObject.h in Headers */,
+				188C5BB51921E85200ED14BC /* SPSJsonWrapper.h in Headers */,
+				1F90EF3115EDFE8900F2E132 /* TFGradientOverlayLayer.h in Headers */,
+				1F90EF3215EDFE8900F2E132 /* TFTickerView.h in Headers */,
+				1F90EF5315EE01E900F2E132 /* TFSmartItemBean.h in Headers */,
+				18A257BE1A6E024400245522 /* NSData+Base64.h in Headers */,
+				188C5BB01921E83A00ED14BC /* GTMBase64.h in Headers */,
+				1F90EF5415EE01E900F2E132 /* TFSmartView.h in Headers */,
+				1F90EF5615EE028100F2E132 /* SpacemanBlocks.h in Headers */,
+				2CAAA20C1C71A12F00D9397B /* TFHTTP.h in Headers */,
+				188C5BBA1921E90B00ED14BC /* TFKeychain.h in Headers */,
+				188C5BB11921E83A00ED14BC /* GTMDefines.h in Headers */,
+				1F5E30BC15EF6174002C4C2E /* TFCrashHandler.h in Headers */,
+				1F5E30BD15EF6174002C4C2E /* TFFile.h in Headers */,
+				1F48B79115F5D3AE001019A7 /* TFDeviceInfo.h in Headers */,
+				188C5BB21921E83A00ED14BC /* KeychainItemWrapper.h in Headers */,
+				2CB73E3E1C75725C00A723A1 /* TFSmartItem.h in Headers */,
+				1F48B7AE15F5D912001019A7 /* TFCommand.h in Headers */,
+				1F19FA9515F72291001462C2 /* TFLocation.h in Headers */,
+				1F86F62E15FF046F00D47B1E /* TripleDesTool.h in Headers */,
+				1FFFD7C216005AD0009D05B9 /* TFPatternView.h in Headers */,
+				1F105036160722470069F7F2 /* TFShareKit.h in Headers */,
+				18AFEBFA1C7EF1F800847249 /* UIImage+WebP.h in Headers */,
+				1FF8269C162AB1B300D89FBE /* TFGenieView.h in Headers */,
+				1F1FBB2D1675ADD800071161 /* TFDictionary.h in Headers */,
+				1FF9AD9F167C6C1C0023681C /* TFDispatch.h in Headers */,
+				1F648F16167ECB3300C63697 /* TFNetDispatch.h in Headers */,
+				1F5A779516BEB9E70073BCCE /* GCDCenter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F0B89C115CA55F60028870F /* tfcommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0B89CF15CA55F60028870F /* Build configuration list for PBXNativeTarget "tfcommon" */;
+			buildPhases = (
+				1F0B89BE15CA55F60028870F /* Sources */,
+				1F0B89BF15CA55F60028870F /* Frameworks */,
+				1F0B89C015CA55F60028870F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18590F941A831A2A00E8B2F1 /* PBXTargetDependency */,
+			);
+			name = tfcommon;
+			productName = tfcommon;
+			productReference = 1F0B89C215CA55F60028870F /* libtfcommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F0B89B915CA55F60028870F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+			};
+			buildConfigurationList = 1F0B89BC15CA55F60028870F /* Build configuration list for PBXProject "tfcommon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F0B89B715CA55F60028870F;
+			productRefGroup = 1F0B89C315CA55F60028870F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 1F88684E15CBB6CF004E09D7 /* Products */;
+					ProjectRef = 1F88684D15CBB6CF004E09D7 /* sbjson.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1F0B89C115CA55F60028870F /* tfcommon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		1F88685515CBB6CF004E09D7 /* libsbjson.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libsbjson.a;
+			remoteRef = 1F88685415CBB6CF004E09D7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F0B89BE15CA55F60028870F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F2A6981A52B2520084251E /* TFSwitchButton.m in Sources */,
+				1F0B89E715CA6F400028870F /* main.m in Sources */,
+				1FD80C4D15D501690037C775 /* TFCache.m in Sources */,
+				2C9690EF1C71785E0079AAF8 /* TFTraffic.m in Sources */,
+				2C9690DB1C7176E20079AAF8 /* TFModel.m in Sources */,
+				188C5BB81921E8F600ED14BC /* TFCommonDefine.m in Sources */,
+				1FD80C4F15D501690037C775 /* TFMemoryAllocTable.m in Sources */,
+				1FD80C5715D501690037C775 /* TFBaseViewModel.m in Sources */,
+				2CAAA2721C730B9C00D9397B /* TFViewModel.m in Sources */,
+				1FD80C5915D501690037C775 /* TFDataModel.m in Sources */,
+				18CB599418FCD4230007B81F /* OpenUDID.m in Sources */,
+				2C9690D91C7176580079AAF8 /* TFURLCache.m in Sources */,
+				2C9690D41C7175F90079AAF8 /* TFURLConnection.m in Sources */,
+				2CB73E3C1C75725200A723A1 /* TFSmartItem.m in Sources */,
+				2C9691061C717EF20079AAF8 /* tfthreadpool.s in Sources */,
+				1F90EF4215EE003300F2E132 /* TFDoubleSidedLayer.m in Sources */,
+				18AFEBFE1C7EF22200847249 /* TFWebPConvertData.m in Sources */,
+				1F90EF4315EE003300F2E132 /* TFGradientOverlayLayer.m in Sources */,
+				2C9690E71C7177E50079AAF8 /* TFObject.m in Sources */,
+				188C5BB61921E85200ED14BC /* SPSJsonWrapper.m in Sources */,
+				1872C8B71A24207C00EBCFCF /* CheckJailBroken.m in Sources */,
+				1F90EF4415EE003300F2E132 /* TFImageLoader.m in Sources */,
+				1F90EF4615EE003300F2E132 /* TFScrollView.m in Sources */,
+				1F90EF4715EE003300F2E132 /* TFTickerView.m in Sources */,
+				2C9691211C719DF10079AAF8 /* TFHTTP.m in Sources */,
+				1F90EF4815EE003300F2E132 /* TFViewController.m in Sources */,
+				2CAAA2241C71A55300D9397B /* TFNetExecutor.m in Sources */,
+				1F90EF4D15EE019900F2E132 /* TFSmartItemBean.m in Sources */,
+				18AFEBFC1C7EF21700847249 /* UIImage+WebP.m in Sources */,
+				1F90EF4E15EE019900F2E132 /* TFSmartView.m in Sources */,
+				1F5E30B115EF5614002C4C2E /* TFFile.m in Sources */,
+				2C9691261C719E480079AAF8 /* GZipTool.m in Sources */,
+				1F5E30B915EF5EB6002C4C2E /* TFCrashHandler.m in Sources */,
+				2C96911F1C719DF10079AAF8 /* TFHTTPData.m in Sources */,
+				18A257C01A6E024D00245522 /* NSData+Base64.m in Sources */,
+				1F48B78E15F5D1F5001019A7 /* TFDeviceInfo.m in Sources */,
+				1F48B79B15F5D769001019A7 /* TFCommand.m in Sources */,
+				1F48B7A315F5D7A3001019A7 /* TripleDesTool.m in Sources */,
+				1F48B7A815F5D7B0001019A7 /* GTMBase64.m in Sources */,
+				1F19FA9215F71FA2001462C2 /* TFLocation.m in Sources */,
+				1FFFD7BF16005AA7009D05B9 /* TFPatternView.m in Sources */,
+				2CB73E371C75709F00A723A1 /* TFImageView.m in Sources */,
+				1F105017160719C40069F7F2 /* TFShareKit.m in Sources */,
+				1FF82699162AB18000D89FBE /* TFGenieView.m in Sources */,
+				1F2D4CC61670A1A0001B1B63 /* TFDictionary.m in Sources */,
+				2C9691081C717EF20079AAF8 /* tfthreadpool.c in Sources */,
+				1F5A776D16BEB93D0073BCCE /* GCDCenter.m in Sources */,
+				1FF3B9F817CCA1A400575B85 /* KeychainItemWrapper.m in Sources */,
+				1FF3B9FA17CCA1A400575B85 /* TFKeychain.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18590F941A831A2A00E8B2F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sbjson;
+			targetProxy = 18590F931A831A2A00E8B2F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F0B89CD15CA55F60028870F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F0B89CE15CA55F60028870F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F0B89D015CA55F60028870F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/tfcommon.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tfcommon",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tfcommon/tfcommon-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../sbjson/sbjson/",
+				);
+				INSTALL_PATH = usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Debug;
+		};
+		1F0B89D115CA55F60028870F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/tfcommon.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/tfcommon",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tfcommon/tfcommon-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../sbjson/sbjson/",
+				);
+				INSTALL_PATH = usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F0B89BC15CA55F60028870F /* Build configuration list for PBXProject "tfcommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0B89CD15CA55F60028870F /* Debug */,
+				1F0B89CE15CA55F60028870F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0B89CF15CA55F60028870F /* Build configuration list for PBXNativeTarget "tfcommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0B89D015CA55F60028870F /* Debug */,
+				1F0B89D115CA55F60028870F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F0B89B915CA55F60028870F /* Project object */;
+}

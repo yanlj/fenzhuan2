@@ -1,0 +1,43 @@
+//
+//  FZPrefix.pch
+//  fenzhuan2
+//
+//  Created by 颜梁坚 on 16/3/18.
+//  Copyright © 2016年 yanlj. All rights reserved.
+//
+
+#ifndef FZPrefix_pch
+#define FZPrefix_pch
+
+#import <Availability.h>
+
+#ifndef __IPHONE_6_0
+#warning "This project uses features only available in iOS SDK 6.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "CONSTANT.h"
+
+    #import "TFCommon.h"
+    #import <objc/runtime.h>
+    #import "FZModel.h"
+    #import "FZEntity.h"
+    #import "TF8PublicData.h"
+    #import "LongLivedVariables.h"
+#endif
+
+#endif /* FZPrefix_pch */
+
+
+/*!
+ @define    kServerEndPointTe
+ st
+ @abstract  淘粉吧api请求地址*/
+
+
+#define kDefault_Server_Online @"http://s.taofen8.com/service/mobile.htm"
+#define kDefault_Server_Upload @"http://s.taofen8.com/upload/"
+#define kDefault_Server_Api    @"http://api.taofen8.com/service/mobile.htm"
+#define kDefault_Server_Report @"http://al.taofen8.com/service/mobile.htm"

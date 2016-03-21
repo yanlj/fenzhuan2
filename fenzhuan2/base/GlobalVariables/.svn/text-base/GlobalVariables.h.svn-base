@@ -1,0 +1,68 @@
+//
+//  GlobalVariables.h
+//  TfClient
+//
+//  Created by crazycao on 14-10-16.
+//
+//
+
+#import <Foundation/Foundation.h>
+#import "HotItem.h"
+
+@interface GlobalVariables : NSObject
+
+@property (nonatomic, strong) NSString *updateUrl;
+@property (nonatomic, strong) NSString *updateTitle;
+
+@property (nonatomic, assign) BOOL seckillTipsShowed;
+
+@property (nonatomic, strong) NSString *searchTip;
+
+@property (nonatomic, strong) NSMutableArray *hotwordList;
+
+@property (nonatomic, strong) NSMutableDictionary *itemInfoDict;
+
+@property (nonatomic, strong) NSMutableDictionary *wapFanliDict;
+
+@property (nonatomic, strong) NSMutableDictionary *wapLikeStatusDict;
+
+@property (nonatomic, strong) NSMutableDictionary *wapCanLikeDict;
+
+@property (nonatomic, strong) NSMutableDictionary *wapSimpleWapFanliDtoDict;
+
+@property (nonatomic, strong) NSMutableDictionary *wapItemSharedDict;//add by yanlj 存了分享的信息
+
+@property (nonatomic, strong) NSMutableDictionary *itemLikeStatusDict;
+
+@property (nonatomic, strong) NSString *activityDownloadingImageUrl;
+@property (nonatomic, assign) BOOL activityDownloadFinished;
+
+@property (nonatomic, strong) NSString *activityCode;// 一元购活动码
+
+@property (nonatomic, strong) NSMutableArray *alipayCrawlUrls;
+@property (nonatomic, strong) NSString *alipayCrawlJs;
+@property (nonatomic, strong) NSString *orderCrawlUrl;
+@property (nonatomic, strong) NSString *orderCrawlJs;
+@property (nonatomic, strong) NSString *addressCrawlUrl;
+@property (nonatomic, strong) NSString *addressCrawlJs;
+
+@property (nonatomic, strong) NSString *levelUrl;
+@property (nonatomic, strong) NSString *levelJs;
+
+// 爆款分享
+@property (nonatomic, strong) NSString *hotItemId;
+@property (nonatomic, strong) HotItem *hotItem;
+@property (nonatomic, strong) NSString *crawlStartDate;
+@property (nonatomic, assign) BOOL needShowAlipayInputViewAgain;
+@property (nonatomic, assign) BOOL isNewAlipayInputView;
+@property (nonatomic, strong) NSArray *alipayInputViewTitleStyleTexts;
+@property (nonatomic, strong) NSString *alipayInputViewContent;
+@property (nonatomic, strong) NSString *alipayInputViewInput;
+
++ (GlobalVariables *)shared;
+
+@property (nonatomic, strong) NSString *isTrackOrdersEnable;
+@property (nonatomic, strong) NSString *trackOrdersTimeOut;
+
+
+@end

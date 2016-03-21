@@ -1,0 +1,35 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "6d9dd3c8-c596-4605-bda8-3cd146cae507++8568",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "6d9dd3c8-c596-4605-bda8-3cd146cae507++283" : {
+
+    },
+    "6d9dd3c8-c596-4605-bda8-3cd146cae507++8568" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6d9dd3c8-c596-4605-bda8-3cd146cae507++283" : 0,
+    "6d9dd3c8-c596-4605-bda8-3cd146cae507++8568" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "718C2AD0-623A-4123-8199-972F133F2688",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6d9dd3c8-c596-4605-bda8-3cd146cae507++283" : "",
+    "6d9dd3c8-c596-4605-bda8-3cd146cae507++8568" : "lib\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "tfcommon",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "tfcommon\/tfcommon.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/122.225.114.30:10080",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6d9dd3c8-c596-4605-bda8-3cd146cae507++283"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/122.225.114.30:10080",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6d9dd3c8-c596-4605-bda8-3cd146cae507++8568"
+    }
+  ]
+}

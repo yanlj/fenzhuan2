@@ -1,0 +1,724 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D42C093E1C9BE80C00DF4DB0 /* FZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C093D1C9BE80C00DF4DB0 /* FZModel.m */; };
+		D42C09411C9BEA4700DF4DB0 /* FZEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C09401C9BEA4700DF4DB0 /* FZEntity.m */; };
+		D42C09521C9BEF4300DF4DB0 /* TF8PublicData.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C094F1C9BEF4300DF4DB0 /* TF8PublicData.m */; };
+		D42C09531C9BEF4300DF4DB0 /* Top.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C09511C9BEF4300DF4DB0 /* Top.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D42C09561C9BEF9F00DF4DB0 /* AppKey.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C09551C9BEF9F00DF4DB0 /* AppKey.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D42C09911C9BF69100DF4DB0 /* libsbjson.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09901C9BF69100DF4DB0 /* libsbjson.a */; };
+		D42C099C1C9BFC8A00DF4DB0 /* LongLivedVariables.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C099A1C9BFC8A00DF4DB0 /* LongLivedVariables.m */; };
+		D42C099F1C9BFE1B00DF4DB0 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C099E1C9BFE1B00DF4DB0 /* AdSupport.framework */; };
+		D42C09A11C9BFE4B00DF4DB0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09A01C9BFE4B00DF4DB0 /* MobileCoreServices.framework */; };
+		D42C09A31C9BFE5A00DF4DB0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09A21C9BFE5A00DF4DB0 /* MessageUI.framework */; };
+		D42C09A51C9BFE9000DF4DB0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09A41C9BFE9000DF4DB0 /* CFNetwork.framework */; };
+		D42C09A71C9BFEB100DF4DB0 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09A61C9BFEB100DF4DB0 /* CoreTelephony.framework */; };
+		D42C09A91C9C01CF00DF4DB0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09A81C9C01CF00DF4DB0 /* Security.framework */; };
+		D42C09AB1C9C029C00DF4DB0 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09AA1C9C029C00DF4DB0 /* OpenGLES.framework */; };
+		D42C09AD1C9C03E200DF4DB0 /* libz.1.1.3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D42C09AC1C9C03E200DF4DB0 /* libz.1.1.3.tbd */; };
+		D42C09B01C9C059C00DF4DB0 /* HomePageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C09AF1C9C059C00DF4DB0 /* HomePageModel.m */; };
+		D42C09B41C9C05BC00DF4DB0 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C09B21C9C05BC00DF4DB0 /* HomePageViewController.m */; };
+		D42C09BE1C9C06C400DF4DB0 /* FZViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C09BD1C9C06C400DF4DB0 /* FZViewModel.m */; };
+		D42C09C11C9C071100DF4DB0 /* HomePageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D42C09C01C9C071100DF4DB0 /* HomePageViewModel.m */; };
+		D45DFC941C9A570A00D0105C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D45DFC931C9A570A00D0105C /* main.m */; };
+		D45DFC971C9A570A00D0105C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D45DFC961C9A570A00D0105C /* AppDelegate.m */; };
+		D45DFCA01C9A570A00D0105C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45DFC9E1C9A570A00D0105C /* Main.storyboard */; };
+		D45DFCA21C9A570A00D0105C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45DFCA11C9A570A00D0105C /* Assets.xcassets */; };
+		D45DFCA51C9A570A00D0105C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45DFCA31C9A570A00D0105C /* LaunchScreen.storyboard */; };
+		D45DFCCA1C9A588D00D0105C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DFCC91C9A588D00D0105C /* UIKit.framework */; };
+		D45DFD081C9A5E9F00D0105C /* libtfcommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DFD071C9A5E4F00D0105C /* libtfcommon.a */; };
+		D474B41F1C9BD37E0010C4EB /* FZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D474B4151C9BD37E0010C4EB /* FZBaseViewController.m */; };
+		D474B4201C9BD37E0010C4EB /* FZTabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = D474B4191C9BD37E0010C4EB /* FZTabbar.m */; };
+		D474B4211C9BD37E0010C4EB /* FZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D474B41B1C9BD37E0010C4EB /* FZTabBarController.m */; };
+		D474B4221C9BD37E0010C4EB /* MarqueeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D474B41E1C9BD37E0010C4EB /* MarqueeLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D42C09921C9BF6AF00DF4DB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45DFD011C9A5E4F00D0105C /* tfcommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F0B89C115CA55F60028870F;
+			remoteInfo = tfcommon;
+		};
+		D45DFD061C9A5E4F00D0105C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D45DFD011C9A5E4F00D0105C /* tfcommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1F0B89C215CA55F60028870F;
+			remoteInfo = tfcommon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D42C093C1C9BE80C00DF4DB0 /* FZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZModel.h; sourceTree = "<group>"; };
+		D42C093D1C9BE80C00DF4DB0 /* FZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZModel.m; sourceTree = "<group>"; };
+		D42C093F1C9BEA4700DF4DB0 /* FZEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZEntity.h; sourceTree = "<group>"; };
+		D42C09401C9BEA4700DF4DB0 /* FZEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZEntity.m; sourceTree = "<group>"; };
+		D42C094E1C9BEF4300DF4DB0 /* TF8PublicData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TF8PublicData.h; sourceTree = "<group>"; };
+		D42C094F1C9BEF4300DF4DB0 /* TF8PublicData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TF8PublicData.m; sourceTree = "<group>"; };
+		D42C09501C9BEF4300DF4DB0 /* Top.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Top.h; sourceTree = "<group>"; };
+		D42C09511C9BEF4300DF4DB0 /* Top.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Top.m; sourceTree = "<group>"; };
+		D42C09541C9BEF9F00DF4DB0 /* AppKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppKey.h; sourceTree = "<group>"; };
+		D42C09551C9BEF9F00DF4DB0 /* AppKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppKey.m; sourceTree = "<group>"; };
+		D42C09581C9BF3BC00DF4DB0 /* CheckJailBroken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CheckJailBroken.h; path = lib/tfcommon/tfcommon/include/CheckJailBroken.h; sourceTree = SOURCE_ROOT; };
+		D42C09591C9BF3BC00DF4DB0 /* GCDCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDCenter.h; path = lib/tfcommon/tfcommon/include/GCDCenter.h; sourceTree = SOURCE_ROOT; };
+		D42C095A1C9BF3BC00DF4DB0 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMBase64.h; path = lib/tfcommon/tfcommon/include/GTMBase64.h; sourceTree = SOURCE_ROOT; };
+		D42C095B1C9BF3BC00DF4DB0 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = lib/tfcommon/tfcommon/include/GTMDefines.h; sourceTree = SOURCE_ROOT; };
+		D42C095C1C9BF3BC00DF4DB0 /* GZipTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GZipTool.h; path = lib/tfcommon/tfcommon/include/GZipTool.h; sourceTree = SOURCE_ROOT; };
+		D42C095D1C9BF3BC00DF4DB0 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainItemWrapper.h; path = lib/tfcommon/tfcommon/include/KeychainItemWrapper.h; sourceTree = SOURCE_ROOT; };
+		D42C095E1C9BF3BC00DF4DB0 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "lib/tfcommon/tfcommon/include/NSData+Base64.h"; sourceTree = SOURCE_ROOT; };
+		D42C095F1C9BF3BC00DF4DB0 /* SpacemanBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpacemanBlocks.h; path = lib/tfcommon/tfcommon/include/SpacemanBlocks.h; sourceTree = SOURCE_ROOT; };
+		D42C09601C9BF3BC00DF4DB0 /* TFBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFBaseViewModel.h; path = lib/tfcommon/tfcommon/include/TFBaseViewModel.h; sourceTree = SOURCE_ROOT; };
+		D42C09611C9BF3BC00DF4DB0 /* TFCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCache.h; path = lib/tfcommon/tfcommon/include/TFCache.h; sourceTree = SOURCE_ROOT; };
+		D42C09621C9BF3BC00DF4DB0 /* TFCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCommand.h; path = lib/tfcommon/tfcommon/include/TFCommand.h; sourceTree = SOURCE_ROOT; };
+		D42C09631C9BF3BC00DF4DB0 /* TFCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCommon.h; path = lib/tfcommon/tfcommon/include/TFCommon.h; sourceTree = SOURCE_ROOT; };
+		D42C09641C9BF3BC00DF4DB0 /* TFCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCommonDefine.h; path = lib/tfcommon/tfcommon/include/TFCommonDefine.h; sourceTree = SOURCE_ROOT; };
+		D42C09651C9BF3BC00DF4DB0 /* TFCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFCrashHandler.h; path = lib/tfcommon/tfcommon/include/TFCrashHandler.h; sourceTree = SOURCE_ROOT; };
+		D42C09661C9BF3BC00DF4DB0 /* TFDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFDataModel.h; path = lib/tfcommon/tfcommon/include/TFDataModel.h; sourceTree = SOURCE_ROOT; };
+		D42C09671C9BF3BC00DF4DB0 /* TFDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFDeviceInfo.h; path = lib/tfcommon/tfcommon/include/TFDeviceInfo.h; sourceTree = SOURCE_ROOT; };
+		D42C09681C9BF3BC00DF4DB0 /* TFDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFDictionary.h; path = lib/tfcommon/tfcommon/include/TFDictionary.h; sourceTree = SOURCE_ROOT; };
+		D42C09691C9BF3BC00DF4DB0 /* TFDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFDispatch.h; path = lib/tfcommon/tfcommon/include/TFDispatch.h; sourceTree = SOURCE_ROOT; };
+		D42C096A1C9BF3BC00DF4DB0 /* TFDoubleSidedLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFDoubleSidedLayer.h; path = lib/tfcommon/tfcommon/include/TFDoubleSidedLayer.h; sourceTree = SOURCE_ROOT; };
+		D42C096B1C9BF3BC00DF4DB0 /* TFFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFFile.h; path = lib/tfcommon/tfcommon/include/TFFile.h; sourceTree = SOURCE_ROOT; };
+		D42C096C1C9BF3BC00DF4DB0 /* TFGenieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGenieView.h; path = lib/tfcommon/tfcommon/include/TFGenieView.h; sourceTree = SOURCE_ROOT; };
+		D42C096D1C9BF3BC00DF4DB0 /* TFGradientOverlayLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFGradientOverlayLayer.h; path = lib/tfcommon/tfcommon/include/TFGradientOverlayLayer.h; sourceTree = SOURCE_ROOT; };
+		D42C096E1C9BF3BC00DF4DB0 /* TFHTTP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHTTP.h; path = lib/tfcommon/tfcommon/include/TFHTTP.h; sourceTree = SOURCE_ROOT; };
+		D42C096F1C9BF3BC00DF4DB0 /* TFHTTPData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFHTTPData.h; path = lib/tfcommon/tfcommon/include/TFHTTPData.h; sourceTree = SOURCE_ROOT; };
+		D42C09701C9BF3BC00DF4DB0 /* TFImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFImageLoader.h; path = lib/tfcommon/tfcommon/include/TFImageLoader.h; sourceTree = SOURCE_ROOT; };
+		D42C09711C9BF3BC00DF4DB0 /* TFImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFImageView.h; path = lib/tfcommon/tfcommon/include/TFImageView.h; sourceTree = SOURCE_ROOT; };
+		D42C09721C9BF3BC00DF4DB0 /* TFKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFKeychain.h; path = lib/tfcommon/tfcommon/include/TFKeychain.h; sourceTree = SOURCE_ROOT; };
+		D42C09731C9BF3BC00DF4DB0 /* TFLibChannelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFLibChannelProtocol.h; path = lib/tfcommon/tfcommon/include/TFLibChannelProtocol.h; sourceTree = SOURCE_ROOT; };
+		D42C09741C9BF3BC00DF4DB0 /* TFLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFLocation.h; path = lib/tfcommon/tfcommon/include/TFLocation.h; sourceTree = SOURCE_ROOT; };
+		D42C09751C9BF3BC00DF4DB0 /* TFMemoryAllocTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFMemoryAllocTable.h; path = lib/tfcommon/tfcommon/include/TFMemoryAllocTable.h; sourceTree = SOURCE_ROOT; };
+		D42C09761C9BF3BC00DF4DB0 /* TFModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFModel.h; path = lib/tfcommon/tfcommon/include/TFModel.h; sourceTree = SOURCE_ROOT; };
+		D42C09771C9BF3BC00DF4DB0 /* TFNetDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFNetDispatch.h; path = lib/tfcommon/tfcommon/include/TFNetDispatch.h; sourceTree = SOURCE_ROOT; };
+		D42C09781C9BF3BC00DF4DB0 /* TFNetExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFNetExecutor.h; path = lib/tfcommon/tfcommon/include/TFNetExecutor.h; sourceTree = SOURCE_ROOT; };
+		D42C09791C9BF3BC00DF4DB0 /* TFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFObject.h; path = lib/tfcommon/tfcommon/include/TFObject.h; sourceTree = SOURCE_ROOT; };
+		D42C097A1C9BF3BC00DF4DB0 /* TFPatternView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFPatternView.h; path = lib/tfcommon/tfcommon/include/TFPatternView.h; sourceTree = SOURCE_ROOT; };
+		D42C097B1C9BF3BC00DF4DB0 /* TFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFScrollView.h; path = lib/tfcommon/tfcommon/include/TFScrollView.h; sourceTree = SOURCE_ROOT; };
+		D42C097C1C9BF3BC00DF4DB0 /* TFShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFShareKit.h; path = lib/tfcommon/tfcommon/include/TFShareKit.h; sourceTree = SOURCE_ROOT; };
+		D42C097D1C9BF3BC00DF4DB0 /* TFSmartItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFSmartItem.h; path = lib/tfcommon/tfcommon/include/TFSmartItem.h; sourceTree = SOURCE_ROOT; };
+		D42C097E1C9BF3BC00DF4DB0 /* TFSmartItemBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFSmartItemBean.h; path = lib/tfcommon/tfcommon/include/TFSmartItemBean.h; sourceTree = SOURCE_ROOT; };
+		D42C097F1C9BF3BC00DF4DB0 /* TFSmartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFSmartView.h; path = lib/tfcommon/tfcommon/include/TFSmartView.h; sourceTree = SOURCE_ROOT; };
+		D42C09801C9BF3BC00DF4DB0 /* TFSwitchButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFSwitchButton.h; path = lib/tfcommon/tfcommon/include/TFSwitchButton.h; sourceTree = SOURCE_ROOT; };
+		D42C09811C9BF3BC00DF4DB0 /* TFTickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFTickerView.h; path = lib/tfcommon/tfcommon/include/TFTickerView.h; sourceTree = SOURCE_ROOT; };
+		D42C09821C9BF3BC00DF4DB0 /* TFTraffic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFTraffic.h; path = lib/tfcommon/tfcommon/include/TFTraffic.h; sourceTree = SOURCE_ROOT; };
+		D42C09831C9BF3BC00DF4DB0 /* TFURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFURLCache.h; path = lib/tfcommon/tfcommon/include/TFURLCache.h; sourceTree = SOURCE_ROOT; };
+		D42C09841C9BF3BC00DF4DB0 /* TFURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFURLConnection.h; path = lib/tfcommon/tfcommon/include/TFURLConnection.h; sourceTree = SOURCE_ROOT; };
+		D42C09851C9BF3BC00DF4DB0 /* TFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFViewController.h; path = lib/tfcommon/tfcommon/include/TFViewController.h; sourceTree = SOURCE_ROOT; };
+		D42C09861C9BF3BC00DF4DB0 /* TFViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFViewModel.h; path = lib/tfcommon/tfcommon/include/TFViewModel.h; sourceTree = SOURCE_ROOT; };
+		D42C09871C9BF3BC00DF4DB0 /* TFWebPConvertData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFWebPConvertData.h; path = lib/tfcommon/tfcommon/include/TFWebPConvertData.h; sourceTree = SOURCE_ROOT; };
+		D42C09881C9BF3BC00DF4DB0 /* TripleDesTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TripleDesTool.h; path = lib/tfcommon/tfcommon/include/TripleDesTool.h; sourceTree = SOURCE_ROOT; };
+		D42C09891C9BF3BC00DF4DB0 /* UIImage+WebP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+WebP.h"; path = "lib/tfcommon/tfcommon/include/UIImage+WebP.h"; sourceTree = SOURCE_ROOT; };
+		D42C09901C9BF69100DF4DB0 /* libsbjson.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libsbjson.a; path = "lib/sbjson/build/Debug-iphoneos/libsbjson.a"; sourceTree = SOURCE_ROOT; };
+		D42C09941C9BF76B00DF4DB0 /* tfthreadpool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tfthreadpool.h; path = lib/tfcommon/tfcommon/core/tfthreadpool.h; sourceTree = SOURCE_ROOT; };
+		D42C09951C9BF7BB00DF4DB0 /* SPSJsonWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSJsonWrapper.h; path = lib/tfcommon/tfcommon/SPSJsonWrapper.h; sourceTree = SOURCE_ROOT; };
+		D42C09991C9BFC8A00DF4DB0 /* LongLivedVariables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongLivedVariables.h; sourceTree = "<group>"; };
+		D42C099A1C9BFC8A00DF4DB0 /* LongLivedVariables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongLivedVariables.m; sourceTree = "<group>"; };
+		D42C099D1C9BFD5600DF4DB0 /* FZPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZPrefix.pch; sourceTree = "<group>"; };
+		D42C099E1C9BFE1B00DF4DB0 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		D42C09A01C9BFE4B00DF4DB0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D42C09A21C9BFE5A00DF4DB0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		D42C09A41C9BFE9000DF4DB0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D42C09A61C9BFEB100DF4DB0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		D42C09A81C9C01CF00DF4DB0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D42C09AA1C9C029C00DF4DB0 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D42C09AC1C9C03E200DF4DB0 /* libz.1.1.3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.1.3.tbd; path = usr/lib/libz.1.1.3.tbd; sourceTree = SDKROOT; };
+		D42C09AE1C9C059C00DF4DB0 /* HomePageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageModel.h; sourceTree = "<group>"; };
+		D42C09AF1C9C059C00DF4DB0 /* HomePageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageModel.m; sourceTree = "<group>"; };
+		D42C09B11C9C05BC00DF4DB0 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		D42C09B21C9C05BC00DF4DB0 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		D42C09BC1C9C06C400DF4DB0 /* FZViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZViewModel.h; sourceTree = "<group>"; };
+		D42C09BD1C9C06C400DF4DB0 /* FZViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZViewModel.m; sourceTree = "<group>"; };
+		D42C09BF1C9C071100DF4DB0 /* HomePageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewModel.h; sourceTree = "<group>"; };
+		D42C09C01C9C071100DF4DB0 /* HomePageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewModel.m; sourceTree = "<group>"; };
+		D45DFC8F1C9A570A00D0105C /* fenzhuan2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fenzhuan2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D45DFC931C9A570A00D0105C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D45DFC951C9A570A00D0105C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D45DFC961C9A570A00D0105C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D45DFC9F1C9A570A00D0105C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D45DFCA11C9A570A00D0105C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D45DFCA41C9A570A00D0105C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D45DFCA61C9A570A00D0105C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D45DFCC91C9A588D00D0105C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D45DFD011C9A5E4F00D0105C /* tfcommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = tfcommon.xcodeproj; path = lib/tfcommon/tfcommon.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D474B4141C9BD37E0010C4EB /* FZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZBaseViewController.h; sourceTree = "<group>"; };
+		D474B4151C9BD37E0010C4EB /* FZBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZBaseViewController.m; sourceTree = "<group>"; };
+		D474B4161C9BD37E0010C4EB /* CONSTANT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CONSTANT.h; sourceTree = "<group>"; };
+		D474B4181C9BD37E0010C4EB /* FZTabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZTabbar.h; sourceTree = "<group>"; };
+		D474B4191C9BD37E0010C4EB /* FZTabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZTabbar.m; sourceTree = "<group>"; };
+		D474B41A1C9BD37E0010C4EB /* FZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZTabBarController.h; sourceTree = "<group>"; };
+		D474B41B1C9BD37E0010C4EB /* FZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZTabBarController.m; sourceTree = "<group>"; };
+		D474B41D1C9BD37E0010C4EB /* MarqueeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarqueeLabel.h; sourceTree = "<group>"; };
+		D474B41E1C9BD37E0010C4EB /* MarqueeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarqueeLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D45DFC8C1C9A570A00D0105C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42C09AD1C9C03E200DF4DB0 /* libz.1.1.3.tbd in Frameworks */,
+				D42C09AB1C9C029C00DF4DB0 /* OpenGLES.framework in Frameworks */,
+				D42C09A91C9C01CF00DF4DB0 /* Security.framework in Frameworks */,
+				D42C09A71C9BFEB100DF4DB0 /* CoreTelephony.framework in Frameworks */,
+				D42C09A51C9BFE9000DF4DB0 /* CFNetwork.framework in Frameworks */,
+				D42C09A31C9BFE5A00DF4DB0 /* MessageUI.framework in Frameworks */,
+				D42C09A11C9BFE4B00DF4DB0 /* MobileCoreServices.framework in Frameworks */,
+				D42C099F1C9BFE1B00DF4DB0 /* AdSupport.framework in Frameworks */,
+				D42C09911C9BF69100DF4DB0 /* libsbjson.a in Frameworks */,
+				D45DFD081C9A5E9F00D0105C /* libtfcommon.a in Frameworks */,
+				D45DFCCA1C9A588D00D0105C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D42C09341C9BE49700DF4DB0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09361C9BE54400DF4DB0 /* HomePage */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D42C09361C9BE54400DF4DB0 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09371C9BE55200DF4DB0 /* m */,
+				D42C09381C9BE55B00DF4DB0 /* v */,
+				D42C09391C9BE57D00DF4DB0 /* vm */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		D42C09371C9BE55200DF4DB0 /* m */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09AE1C9C059C00DF4DB0 /* HomePageModel.h */,
+				D42C09AF1C9C059C00DF4DB0 /* HomePageModel.m */,
+			);
+			name = m;
+			sourceTree = "<group>";
+		};
+		D42C09381C9BE55B00DF4DB0 /* v */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09B11C9C05BC00DF4DB0 /* HomePageViewController.h */,
+				D42C09B21C9C05BC00DF4DB0 /* HomePageViewController.m */,
+			);
+			name = v;
+			sourceTree = "<group>";
+		};
+		D42C09391C9BE57D00DF4DB0 /* vm */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09BF1C9C071100DF4DB0 /* HomePageViewModel.h */,
+				D42C09C01C9C071100DF4DB0 /* HomePageViewModel.m */,
+			);
+			name = vm;
+			sourceTree = "<group>";
+		};
+		D42C093B1C9BE79000DF4DB0 /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				D42C094E1C9BEF4300DF4DB0 /* TF8PublicData.h */,
+				D42C094F1C9BEF4300DF4DB0 /* TF8PublicData.m */,
+				D42C09541C9BEF9F00DF4DB0 /* AppKey.h */,
+				D42C09551C9BEF9F00DF4DB0 /* AppKey.m */,
+				D42C09501C9BEF4300DF4DB0 /* Top.h */,
+				D42C09511C9BEF4300DF4DB0 /* Top.m */,
+				D42C093C1C9BE80C00DF4DB0 /* FZModel.h */,
+				D42C093D1C9BE80C00DF4DB0 /* FZModel.m */,
+				D42C093F1C9BEA4700DF4DB0 /* FZEntity.h */,
+				D42C09401C9BEA4700DF4DB0 /* FZEntity.m */,
+				D42C09BC1C9C06C400DF4DB0 /* FZViewModel.h */,
+				D42C09BD1C9C06C400DF4DB0 /* FZViewModel.m */,
+			);
+			path = Arch;
+			sourceTree = "<group>";
+		};
+		D42C09961C9BFC8A00DF4DB0 /* GlobalVariables */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09991C9BFC8A00DF4DB0 /* LongLivedVariables.h */,
+				D42C099A1C9BFC8A00DF4DB0 /* LongLivedVariables.m */,
+			);
+			path = GlobalVariables;
+			sourceTree = "<group>";
+		};
+		D45DFC861C9A570A00D0105C = {
+			isa = PBXGroup;
+			children = (
+				D45DFC911C9A570A00D0105C /* fenzhuan2 */,
+				D45DFD0F1C9A7F1E00D0105C /* TFCHeader */,
+				D45DFCCB1C9A589300D0105C /* Frameworks */,
+				D45DFC901C9A570A00D0105C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D45DFC901C9A570A00D0105C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D45DFC8F1C9A570A00D0105C /* fenzhuan2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D45DFC911C9A570A00D0105C /* fenzhuan2 */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09341C9BE49700DF4DB0 /* Controller */,
+				D474B4121C9BD37E0010C4EB /* base */,
+				D45DFC951C9A570A00D0105C /* AppDelegate.h */,
+				D45DFC961C9A570A00D0105C /* AppDelegate.m */,
+				D45DFC9E1C9A570A00D0105C /* Main.storyboard */,
+				D45DFCA11C9A570A00D0105C /* Assets.xcassets */,
+				D45DFCA31C9A570A00D0105C /* LaunchScreen.storyboard */,
+				D45DFCA61C9A570A00D0105C /* Info.plist */,
+				D45DFC921C9A570A00D0105C /* Supporting Files */,
+			);
+			path = fenzhuan2;
+			sourceTree = "<group>";
+		};
+		D45DFC921C9A570A00D0105C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D42C099D1C9BFD5600DF4DB0 /* FZPrefix.pch */,
+				D45DFC931C9A570A00D0105C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D45DFCCB1C9A589300D0105C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09AC1C9C03E200DF4DB0 /* libz.1.1.3.tbd */,
+				D42C09AA1C9C029C00DF4DB0 /* OpenGLES.framework */,
+				D42C09A81C9C01CF00DF4DB0 /* Security.framework */,
+				D42C09A61C9BFEB100DF4DB0 /* CoreTelephony.framework */,
+				D42C09A41C9BFE9000DF4DB0 /* CFNetwork.framework */,
+				D42C09A21C9BFE5A00DF4DB0 /* MessageUI.framework */,
+				D42C09A01C9BFE4B00DF4DB0 /* MobileCoreServices.framework */,
+				D42C099E1C9BFE1B00DF4DB0 /* AdSupport.framework */,
+				D42C09901C9BF69100DF4DB0 /* libsbjson.a */,
+				D45DFD011C9A5E4F00D0105C /* tfcommon.xcodeproj */,
+				D45DFCC91C9A588D00D0105C /* UIKit.framework */,
+			);
+			name = Frameworks;
+			path = fenzhuan2;
+			sourceTree = "<group>";
+		};
+		D45DFD021C9A5E4F00D0105C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D45DFD071C9A5E4F00D0105C /* libtfcommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D45DFD0F1C9A7F1E00D0105C /* TFCHeader */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09951C9BF7BB00DF4DB0 /* SPSJsonWrapper.h */,
+				D42C09941C9BF76B00DF4DB0 /* tfthreadpool.h */,
+				D42C09581C9BF3BC00DF4DB0 /* CheckJailBroken.h */,
+				D42C09591C9BF3BC00DF4DB0 /* GCDCenter.h */,
+				D42C095A1C9BF3BC00DF4DB0 /* GTMBase64.h */,
+				D42C095B1C9BF3BC00DF4DB0 /* GTMDefines.h */,
+				D42C095C1C9BF3BC00DF4DB0 /* GZipTool.h */,
+				D42C095D1C9BF3BC00DF4DB0 /* KeychainItemWrapper.h */,
+				D42C095E1C9BF3BC00DF4DB0 /* NSData+Base64.h */,
+				D42C095F1C9BF3BC00DF4DB0 /* SpacemanBlocks.h */,
+				D42C09601C9BF3BC00DF4DB0 /* TFBaseViewModel.h */,
+				D42C09611C9BF3BC00DF4DB0 /* TFCache.h */,
+				D42C09621C9BF3BC00DF4DB0 /* TFCommand.h */,
+				D42C09631C9BF3BC00DF4DB0 /* TFCommon.h */,
+				D42C09641C9BF3BC00DF4DB0 /* TFCommonDefine.h */,
+				D42C09651C9BF3BC00DF4DB0 /* TFCrashHandler.h */,
+				D42C09661C9BF3BC00DF4DB0 /* TFDataModel.h */,
+				D42C09671C9BF3BC00DF4DB0 /* TFDeviceInfo.h */,
+				D42C09681C9BF3BC00DF4DB0 /* TFDictionary.h */,
+				D42C09691C9BF3BC00DF4DB0 /* TFDispatch.h */,
+				D42C096A1C9BF3BC00DF4DB0 /* TFDoubleSidedLayer.h */,
+				D42C096B1C9BF3BC00DF4DB0 /* TFFile.h */,
+				D42C096C1C9BF3BC00DF4DB0 /* TFGenieView.h */,
+				D42C096D1C9BF3BC00DF4DB0 /* TFGradientOverlayLayer.h */,
+				D42C096E1C9BF3BC00DF4DB0 /* TFHTTP.h */,
+				D42C096F1C9BF3BC00DF4DB0 /* TFHTTPData.h */,
+				D42C09701C9BF3BC00DF4DB0 /* TFImageLoader.h */,
+				D42C09711C9BF3BC00DF4DB0 /* TFImageView.h */,
+				D42C09721C9BF3BC00DF4DB0 /* TFKeychain.h */,
+				D42C09731C9BF3BC00DF4DB0 /* TFLibChannelProtocol.h */,
+				D42C09741C9BF3BC00DF4DB0 /* TFLocation.h */,
+				D42C09751C9BF3BC00DF4DB0 /* TFMemoryAllocTable.h */,
+				D42C09761C9BF3BC00DF4DB0 /* TFModel.h */,
+				D42C09771C9BF3BC00DF4DB0 /* TFNetDispatch.h */,
+				D42C09781C9BF3BC00DF4DB0 /* TFNetExecutor.h */,
+				D42C09791C9BF3BC00DF4DB0 /* TFObject.h */,
+				D42C097A1C9BF3BC00DF4DB0 /* TFPatternView.h */,
+				D42C097B1C9BF3BC00DF4DB0 /* TFScrollView.h */,
+				D42C097C1C9BF3BC00DF4DB0 /* TFShareKit.h */,
+				D42C097D1C9BF3BC00DF4DB0 /* TFSmartItem.h */,
+				D42C097E1C9BF3BC00DF4DB0 /* TFSmartItemBean.h */,
+				D42C097F1C9BF3BC00DF4DB0 /* TFSmartView.h */,
+				D42C09801C9BF3BC00DF4DB0 /* TFSwitchButton.h */,
+				D42C09811C9BF3BC00DF4DB0 /* TFTickerView.h */,
+				D42C09821C9BF3BC00DF4DB0 /* TFTraffic.h */,
+				D42C09831C9BF3BC00DF4DB0 /* TFURLCache.h */,
+				D42C09841C9BF3BC00DF4DB0 /* TFURLConnection.h */,
+				D42C09851C9BF3BC00DF4DB0 /* TFViewController.h */,
+				D42C09861C9BF3BC00DF4DB0 /* TFViewModel.h */,
+				D42C09871C9BF3BC00DF4DB0 /* TFWebPConvertData.h */,
+				D42C09881C9BF3BC00DF4DB0 /* TripleDesTool.h */,
+				D42C09891C9BF3BC00DF4DB0 /* UIImage+WebP.h */,
+			);
+			name = TFCHeader;
+			path = fenzhuan2;
+			sourceTree = "<group>";
+		};
+		D474B4121C9BD37E0010C4EB /* base */ = {
+			isa = PBXGroup;
+			children = (
+				D42C09961C9BFC8A00DF4DB0 /* GlobalVariables */,
+				D42C093B1C9BE79000DF4DB0 /* Arch */,
+				D474B4131C9BD37E0010C4EB /* baseView */,
+				D474B4161C9BD37E0010C4EB /* CONSTANT.h */,
+				D474B4171C9BD37E0010C4EB /* fzTabBar */,
+				D474B41C1C9BD37E0010C4EB /* thirdControls */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		D474B4131C9BD37E0010C4EB /* baseView */ = {
+			isa = PBXGroup;
+			children = (
+				D474B4141C9BD37E0010C4EB /* FZBaseViewController.h */,
+				D474B4151C9BD37E0010C4EB /* FZBaseViewController.m */,
+			);
+			path = baseView;
+			sourceTree = "<group>";
+		};
+		D474B4171C9BD37E0010C4EB /* fzTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D474B4181C9BD37E0010C4EB /* FZTabbar.h */,
+				D474B4191C9BD37E0010C4EB /* FZTabbar.m */,
+				D474B41A1C9BD37E0010C4EB /* FZTabBarController.h */,
+				D474B41B1C9BD37E0010C4EB /* FZTabBarController.m */,
+			);
+			path = fzTabBar;
+			sourceTree = "<group>";
+		};
+		D474B41C1C9BD37E0010C4EB /* thirdControls */ = {
+			isa = PBXGroup;
+			children = (
+				D474B41D1C9BD37E0010C4EB /* MarqueeLabel.h */,
+				D474B41E1C9BD37E0010C4EB /* MarqueeLabel.m */,
+			);
+			path = thirdControls;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D45DFC8E1C9A570A00D0105C /* fenzhuan2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D45DFCBF1C9A570A00D0105C /* Build configuration list for PBXNativeTarget "fenzhuan2" */;
+			buildPhases = (
+				D45DFC8B1C9A570A00D0105C /* Sources */,
+				D45DFC8C1C9A570A00D0105C /* Frameworks */,
+				D45DFC8D1C9A570A00D0105C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D42C09931C9BF6AF00DF4DB0 /* PBXTargetDependency */,
+			);
+			name = fenzhuan2;
+			productName = fenzhuan2;
+			productReference = D45DFC8F1C9A570A00D0105C /* fenzhuan2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D45DFC871C9A570A00D0105C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = yanlj;
+				TargetAttributes = {
+					D45DFC8E1C9A570A00D0105C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = D45DFC8A1C9A570A00D0105C /* Build configuration list for PBXProject "fenzhuan2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D45DFC861C9A570A00D0105C;
+			productRefGroup = D45DFC901C9A570A00D0105C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D45DFD021C9A5E4F00D0105C /* Products */;
+					ProjectRef = D45DFD011C9A5E4F00D0105C /* tfcommon.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D45DFC8E1C9A570A00D0105C /* fenzhuan2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D45DFD071C9A5E4F00D0105C /* libtfcommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtfcommon.a;
+			remoteRef = D45DFD061C9A5E4F00D0105C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D45DFC8D1C9A570A00D0105C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D45DFCA51C9A570A00D0105C /* LaunchScreen.storyboard in Resources */,
+				D45DFCA21C9A570A00D0105C /* Assets.xcassets in Resources */,
+				D45DFCA01C9A570A00D0105C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D45DFC8B1C9A570A00D0105C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D42C09C11C9C071100DF4DB0 /* HomePageViewModel.m in Sources */,
+				D42C09B01C9C059C00DF4DB0 /* HomePageModel.m in Sources */,
+				D42C09561C9BEF9F00DF4DB0 /* AppKey.m in Sources */,
+				D42C093E1C9BE80C00DF4DB0 /* FZModel.m in Sources */,
+				D474B41F1C9BD37E0010C4EB /* FZBaseViewController.m in Sources */,
+				D42C09B41C9C05BC00DF4DB0 /* HomePageViewController.m in Sources */,
+				D42C09411C9BEA4700DF4DB0 /* FZEntity.m in Sources */,
+				D42C09531C9BEF4300DF4DB0 /* Top.m in Sources */,
+				D42C09521C9BEF4300DF4DB0 /* TF8PublicData.m in Sources */,
+				D42C099C1C9BFC8A00DF4DB0 /* LongLivedVariables.m in Sources */,
+				D474B4201C9BD37E0010C4EB /* FZTabbar.m in Sources */,
+				D45DFC971C9A570A00D0105C /* AppDelegate.m in Sources */,
+				D474B4211C9BD37E0010C4EB /* FZTabBarController.m in Sources */,
+				D45DFC941C9A570A00D0105C /* main.m in Sources */,
+				D42C09BE1C9C06C400DF4DB0 /* FZViewModel.m in Sources */,
+				D474B4221C9BD37E0010C4EB /* MarqueeLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D42C09931C9BF6AF00DF4DB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tfcommon;
+			targetProxy = D42C09921C9BF6AF00DF4DB0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D45DFC9E1C9A570A00D0105C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45DFC9F1C9A570A00D0105C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D45DFCA31C9A570A00D0105C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D45DFCA41C9A570A00D0105C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D45DFCBD1C9A570A00D0105C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D45DFCBE1C9A570A00D0105C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D45DFCC01C9A570A00D0105C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/tfcommon/tfcommon",
+					"$(PROJECT_DIR)/lib",
+				);
+				GCC_PREFIX_HEADER = fenzhuan2/FZPrefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/tfcommon/tfcommon/include",
+					"$(SRCROOT)/lib/sbjson/sbjson",
+				);
+				INFOPLIST_FILE = fenzhuan2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/sbjson/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanlj.fenzhuan2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D45DFCC11C9A570A00D0105C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/tfcommon/tfcommon",
+					"$(PROJECT_DIR)/lib",
+				);
+				GCC_PREFIX_HEADER = fenzhuan2/FZPrefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib/tfcommon/tfcommon/include",
+					"$(SRCROOT)/lib/sbjson/sbjson",
+				);
+				INFOPLIST_FILE = fenzhuan2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/lib/sbjson/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yanlj.fenzhuan2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D45DFC8A1C9A570A00D0105C /* Build configuration list for PBXProject "fenzhuan2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45DFCBD1C9A570A00D0105C /* Debug */,
+				D45DFCBE1C9A570A00D0105C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D45DFCBF1C9A570A00D0105C /* Build configuration list for PBXNativeTarget "fenzhuan2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D45DFCC01C9A570A00D0105C /* Debug */,
+				D45DFCC11C9A570A00D0105C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D45DFC871C9A570A00D0105C /* Project object */;
+}

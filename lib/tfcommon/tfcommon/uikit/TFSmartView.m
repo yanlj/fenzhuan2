@@ -1,0 +1,458 @@
+//
+//  TFSmartView.m
+//  tfsmart
+//
+//  Created by yin shen on 8/27/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import "TFSmartView.h"
+#import "TFCommonDefine.h"
+#undef kAppearOffset
+#define kAppearOffset 0
+
+//#define NSLog(...)
+
+@interface TFSmartView()
+
+@end
+
+@implementation TFSmartView
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+        [self _initConstants];
+        [self _initFlags];
+        kCount = 0;
+//        _visibleRect = CGRectMake(0, 0, frame.size.width, frame.size.height);
+        _visibleRect = CGRectMake(0, 0, frame.size.width, 2*frame.size.height);
+        _dequeuedItems = [[NSMutableArray alloc] init];
+        _lastScrollViewMoveY = 0.0f;
+        
+        self.backgroundColor = [UIColor whiteColor];
+        self.delaysContentTouches = YES;//延迟处理subView的touch。为了监听滑动手势。设置NO以后不会延迟，会直接处理subView的touch。
+    }
+    return self;
+}
+//
+- (BOOL)touchesShouldCancelInContentView:(UIView *)view
+{
+    if ([view isKindOfClass:[UIButton class]])
+    {
+        return YES;//在view上面滑动的时候会将滑动从view上面取消，传递到底下的scrollview上去。不这样做先碰触到按钮的话就没法滑动了
+    }
+    return [super touchesShouldCancelInContentView:view];
+}
+
+- (void)dealloc{
+    kCount = 0;
+    [_dequeuedItems release],_dequeuedItems=nil;
+    [super dealloc];
+}
+
+- (void)drawRect:(CGRect)rect{
+    [super drawRect:rect];
+}
+
+- (void)setMarginTop:(float)marginTop{
+    _constants.marginTop = marginTop;
+}
+
+- (void)setMarginLeft:(float)marginLeft{
+    _constants.marginLeft = marginLeft;
+}
+
+- (void)setRowSpace:(float)rowSpace{
+    _constants.rowSpace = rowSpace;
+}
+
+- (void)setColSpace:(float)colSpace{
+    _constants.colSpace = colSpace;
+}
+
+- (void)_initConstants{
+    _constants.col = 0;
+    _constants.rowSpace = 0;
+    _constants.colSpace = -1;
+    _constants.marginTop = 0;
+    _constants.marginLeft = 0;
+    _constants.count = 0;
+    _constants.currentPage = 1;
+    _constants.totalPage = 0;
+}
+
+- (void)_initFlags{
+    
+}
+
+- (void)render{
+    _size = [self.target smartViewItemSize]; //项目大小
+    _constants.col = [self.dataSource numberOfColsInSmartView:self];// 列数
+    // 总页数
+    if ([self.dataSource respondsToSelector:@selector(totalPageInSmartView:)]) {
+        _constants.totalPage = [self.dataSource totalPageInSmartView:self];
+    }
+    
+    // 列间距
+    if (1 == _constants.col) 
+        _constants.colSpace = 0;
+    else if (_constants.colSpace==-1){
+		_constants.colSpace = (self.bounds.size.width - _constants.marginLeft*2-_constants.col*_size.width)/(_constants.col-1);
+	}
+    
+    // 项目个数
+    if ([self.dataSource respondsToSelector:@selector(numberOfItemsInSmartView:)]) {
+        _constants.count = [self.dataSource numberOfItemsInSmartView:self];
+    }
+    // 当前页
+    if ([self.dataSource respondsToSelector:@selector(currentPageInSmartView:)]) {
+        _constants.currentPage = [self.dataSource currentPageInSmartView:self];
+    }
+    
+    if (![self.target respondsToSelector:@selector(smartView:eachItemAtIndex:)]) {
+        _constants.count = 0;
+    }
+    
+    _effectRange.min = 0;
+    
+    for (int i = 0; i < _constants.count; ++i) {
+        
+        if ([self.target respondsToSelector:@selector(smartViewItemSize:withIndex:)]) {
+            _size = [self.target smartViewItemSize:self withIndex:i];
+        }
+
+        CGRect rect = CGRectMake(_constants.marginLeft+i%_constants.col*(_size.width+_constants.colSpace), 
+                                 _constants.marginTop+i/_constants.col*(_size.height+_constants.rowSpace), 
+                                 _size.width,
+                                 _size.height);
+        
+        if (rect.origin.y>_visibleRect.origin.y+_visibleRect.size.height) {
+            break;
+        }
+        
+        
+        _effectRange.max = i;
+        TFSmartItem *item = [self.target smartView:self eachItemAtIndex:i];
+        item.index = i;
+        item.delegate = self;
+        [item setFrame:rect];
+        [self addSubview:item];
+       
+    }
+    int row = ceil((float)_constants.count/_constants.col);
+    
+    if (row*(_size.height+_constants.rowSpace)+_constants.rowSpace+_constants.marginTop > self.bounds.size.height) {
+        [self setContentSize:CGSizeMake(self.bounds.size.width,
+                                             row*(_size.height+_constants.rowSpace)+_constants.rowSpace+_constants.marginTop)];
+    }
+    else {
+        [self setContentSize:CGSizeMake(self.bounds.size.width,
+                                        self.bounds.size.height + 1)];
+    }
+    if (self.target != nil && [self.target respondsToSelector:@selector(smartView:didChangeContentSize:)]) {
+        [self.target smartView:self didChangeContentSize:self.contentSize];
+    }
+    
+}
+
+- (void)clean
+{
+    for (UIView *subview in self.subviews) {
+        if ([subview isKindOfClass:[TFSmartItem class]]) {
+            [subview removeFromSuperview];
+        }
+    }
+    
+    _effectRange.max = 0;
+    _effectRange.min = 0;
+    kCount = 0;
+}
+
+- (void)layout{
+//    NSLog(@"%s", __func__);
+    
+    float direct = self.contentOffset.y - _lastScrollViewMoveY;
+    _lastScrollViewMoveY = self.contentOffset.y;
+    
+//    NSLog(@"self.contentOffset.y:%f", self.contentOffset.y);
+    
+    if (abs(direct) >= _visibleRect.size.height) {
+        [self layoutAllItems:direct];
+        return;
+    }
+    
+    int min = _effectRange.min;
+    int max = _effectRange.max;
+    
+    if (direct > 0) {//（向上）
+        for (; min <= max; min++) {
+            TFSmartItem *view = (TFSmartItem *)[self viewWithIndex:min];
+            if ((view == nil || ![view isKindOfClass:[TFSmartItem class]]) && min < _constants.count) {
+                // 新项目
+                TFSmartItem *item = [self.target smartView:self eachItemAtIndex:min];
+                item.index = min;
+                CGRect rect = CGRectMake(_constants.marginLeft+min%_constants.col*(_size.width+_constants.colSpace),
+                                         _constants.marginTop+min/_constants.col*(_size.height+_constants.rowSpace),
+                                         _size.width,
+                                         _size.height);
+                [item setFrame:rect];
+                [self addSubview:item];
+                continue;
+            }
+            if (view.frame.origin.y+view.frame.size.height-_constants.rowSpace < self.contentOffset.y && _effectRange.max < _constants.count)// 当前项目的底部 - 行距 < 滚动距离 (当前项目即将不可见)
+            {
+                
+                if (_effectRange.max==_constants.count-1) { // 最大有效项目 等于 总个数 - 1 （最后一个）
+                    if(_constants.count!=kCount){           // 总数 不等于 已加载数
+                        kCount = _constants.count;
+                        [self.target smartViewShouldLoadMoreItems:self];// 是否加载更多？
+                    }
+                    else if (_constants.totalPage > 0 && _constants.currentPage < _constants.totalPage) {
+                        [self.target smartViewShouldLoadMoreItems:self];// 是否加载更多？
+                    }
+                    
+                    return;
+                }
+                
+                [_dequeuedItems addObject:view];// 将当前项目加入重用项目组
+
+                // 可见项目标记加一
+                _effectRange.min++;
+                _effectRange.max++;
+                // 取消当前项目加载，图片置空
+                [view cancelOperation];
+                [view setImageNil];
+                
+                // 新项目
+                TFSmartItem *item = [self.target smartView:self eachItemAtIndex:_effectRange.max];
+                item.index = _effectRange.max;
+                CGRect rect = CGRectMake(_constants.marginLeft+_effectRange.max%_constants.col*(_size.width+_constants.colSpace),
+                                         _constants.marginTop+_effectRange.max/_constants.col*(_size.height+_constants.rowSpace), 
+                                         _size.width,
+                                         _size.height);
+                [item setFrame:rect];
+                [self addSubview:item];
+                NSLog(@"new max:%d(%d-%d):%@", item.index, _effectRange.min, _effectRange.max, NSStringFromCGRect(rect));
+            }
+        }
+    }
+    else if (direct < 0) {//（向下）
+        for (; min <= max; max--) {
+            TFSmartItem *view = (TFSmartItem *)[self viewWithIndex:max];
+            if ((view == nil || ![view isKindOfClass:[TFSmartItem class]]) && max < _constants.count) {
+                // 新项目
+                TFSmartItem *item = [self.target smartView:self eachItemAtIndex:max];
+                item.index = max;
+                CGRect rect = CGRectMake(_constants.marginLeft+max%_constants.col*(_size.width+_constants.colSpace),
+                                         _constants.marginTop+max/_constants.col*(_size.height+_constants.rowSpace),
+                                         _size.width,
+                                         _size.height);
+                [item setFrame:rect];
+                [self addSubview:item];
+                continue;
+            }
+            
+            if (view.frame.origin.y > self.contentOffset.y+self.bounds.size.height+_constants.rowSpace && _effectRange.min < _constants.count) // 当前项目的顶部 - 行距 > 滑动距离 + SmartView 可见高度 (当前项目即将不可见)
+            {
+                if (_effectRange.min==0) {
+                    return;
+                }
+                
+                [_dequeuedItems addObject:view];
+                _effectRange.min--;
+                _effectRange.max--;
+                [view cancelOperation];
+                [view setImageNil];
+                TFSmartItem *item = [self.target smartView:self eachItemAtIndex:_effectRange.min];
+                item.index = _effectRange.min;
+                CGRect rect = CGRectMake(_constants.marginLeft+_effectRange.min%_constants.col*(_size.width+_constants.colSpace),
+                                         _constants.marginTop+_effectRange.min/_constants.col*(_size.height+_constants.rowSpace),
+                                         _size.width,
+                                         _size.height);
+                [item setFrame:rect];
+                [self addSubview:item];
+                NSLog(@"new min:%d(%d-%d):%@", item.index, _effectRange.min, _effectRange.max, NSStringFromCGRect(rect));
+            }
+        }
+    }
+
+}
+
+- (TFSmartItem *)viewWithIndex:(NSUInteger)index
+{
+    for (TFSmartItem *view in self.subviews) {
+        if (![view isKindOfClass:[TFSmartItem class]]) {
+            continue;
+        }
+        if (view.index == index) {
+            return view;
+        }
+    }
+    return nil;
+}
+
+- (void)layoutAllItems:(float)direct {
+    NSLog(@"%s direct:%f", __func__, direct);
+    
+    NSInteger visibleRange = _effectRange.max - _effectRange.min + 1;
+    
+    if (visibleRange >= _constants.count) {
+        return;//可见个数已超出总个数，则不用重新布局
+    }
+    
+    NSInteger minRow = (self.contentOffset.y - _constants.marginTop)/(_size.height + _constants.rowSpace);
+    if (minRow < 0) {
+        minRow = 0;
+    }
+    
+    NSInteger minIndex = minRow * _constants.col;
+    NSInteger maxIndex = minIndex + visibleRange - 1;
+    
+    NSInteger min = _effectRange.min;
+    NSInteger max = _effectRange.max;
+    
+    for (; min <= max; max--) {
+        TFSmartItem *view = (TFSmartItem *)[self viewWithIndex:max];
+        if (view == nil || ![view isKindOfClass:[TFSmartItem class]]) {
+            NSLog(@"error empty view:%d", min);
+            continue;
+        }
+        
+        [_dequeuedItems addObject:view];
+        [view cancelOperation];
+        [view setImageNil];
+
+    }
+    
+    if (direct > 0) {//（向上）
+        if (maxIndex >= _constants.count) {
+            if(_constants.count!=kCount){           // 总数 不等于 已加载数
+                kCount = _constants.count;
+                [self.target smartViewShouldLoadMoreItems:self];// 是否加载更多？
+            }
+            
+            maxIndex = _constants.count - 1;
+        }
+        
+        for (int i = 0; i <= visibleRange; i++) {
+
+            [self layoutItemAtIndex:(maxIndex-i)];
+        }
+
+        _effectRange.min = maxIndex - visibleRange + 1;
+        _effectRange.max = maxIndex;
+ 
+    }
+    else if (direct < 0) {
+        if (minIndex < 0) {
+            minIndex = 0;
+        }
+        
+        for (int i = 0; i <= visibleRange; i++) {
+            [self layoutItemAtIndex:(minIndex+i)];
+        }
+        
+        _effectRange.min = minIndex;
+        _effectRange.max = minIndex + visibleRange - 1;
+        
+    }
+}
+
+- (void)layoutItemAtIndex:(NSInteger)index
+{
+    NSLog(@"%s index:%d", __func__, index);
+    if (index < _constants.count) {
+        TFSmartItem *item = [self.target smartView:self eachItemAtIndex:index];
+        item.index = index;
+        CGRect rect = CGRectMake(_constants.marginLeft+index%_constants.col*(_size.width+_constants.colSpace),
+                                 _constants.marginTop+index/_constants.col*(_size.height+_constants.rowSpace),
+                                 _size.width,
+                                 _size.height);
+        [item setFrame:rect];
+    }
+}
+
+- (void)reloadItems{
+    self.isReload = YES;
+    [self render];
+}
+
+- (TFSmartItem *)getReuseItem:(int)index{
+    if (self.isReloadVisible) {
+        for (id item in self.subviews) {
+            if ([item isKindOfClass:[TFSmartItem class]]) {
+                TFSmartItem *smartItem = (TFSmartItem *)item;
+                if (smartItem.index==index) {
+                    return [smartItem retain];
+                }
+            }
+        }
+    }
+    
+    
+    
+    if (0==[_dequeuedItems count]) {
+        return nil;
+    }
+    TFSmartItem *item = [[_dequeuedItems objectAtIndex:0] retain];
+    [_dequeuedItems removeObjectAtIndex:0];
+    return item;
+}
+
+- (void)loadMoreItems{
+    self.isReload = NO;
+    if ([self.dataSource respondsToSelector:@selector(numberOfItemsInSmartView:)]) {
+        _constants.count = [self.dataSource numberOfItemsInSmartView:self];
+    }
+    if ([self.dataSource respondsToSelector:@selector(currentPageInSmartView:)]) {
+        _constants.currentPage = [self.dataSource currentPageInSmartView:self];
+    }
+    int row = ceil((float)_constants.count/_constants.col);
+    [self setContentSize:CGSizeMake(self.bounds.size.width,
+                                    row*(_size.height+_constants.rowSpace)+_constants.rowSpace+_constants.marginTop)];
+    if (self.target != nil && [self.target respondsToSelector:@selector(smartView:didChangeContentSize:)]) {
+        [self.target smartView:self didChangeContentSize:self.contentSize];
+    }
+    
+    [self setContentOffset:CGPointMake(0, self.contentOffset.y+1)];
+}
+
+- (void)reloadVisibleItems{
+    
+    TF_MAIN_THREAD_PROTECT(@selector(reloadVisibleItems),nil)
+    self.isReloadVisible = YES;
+    for (id item in self.subviews) {
+        if ([item isKindOfClass:[TFSmartItem class]]) {
+            TFSmartItem *smartItem = (TFSmartItem *)item;
+            if (smartItem.index < _constants.count) {
+                [self.target smartView:self eachItemAtIndex:smartItem.index];
+            }
+        }
+    }
+    self.isReloadVisible = NO;
+}
+
+- (void)smartItemDidSelect:(TFSmartItem *)item{
+    if ([self.target respondsToSelector:@selector(smartView:didSelectItem:)]) {
+        [self.target smartView:self didSelectItem:item];
+    }
+}
+
+- (void)scrollToItemAtIndex:(NSInteger)index
+{
+    CGFloat offset = _constants.marginTop+index/_constants.col*(_size.height+_constants.rowSpace)-self.contentInset.top;
+    
+    [self setContentOffset:CGPointMake(0, offset) animated:NO];
+//    
+//    [self layoutAllItems:offset];
+}
+
+
+@synthesize target;
+@synthesize dataSource;
+@synthesize isReload;
+@synthesize isReloadVisible;
+@end

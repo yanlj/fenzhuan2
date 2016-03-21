@@ -1,0 +1,30 @@
+//
+// Prefix header for all source files of the 'tfcommon' target in the 'tfcommon' project
+//
+
+/*!
+ tufu ->
+ 版本：1.1.0 latest
+ svn分支：http://211.155.230.171:10080/svn/mobile/taofen8_ios_lib/branches/20121105
+ 修改历史：
+ 
+ 1.将TFQueue改造成为tfthreadpool
+ 2.添加部分文件注释
+ 3.TFCommand 整合公共参数
+ 4.TFSmartView 添加reloadVisibleItems
+ 
+ 版本：1.1.1 latest
+ svn分支：http://211.155.230.171:10080/svn/mobile/taofen8_ios_lib/branches/20121215
+ 修改历史：
+ 
+ 1.去除TFQueue,TFOperation,TFNetOperation改为TFDispatch,TFNetDispatch
+ 2.TFCommand添加公共参数retina
+ 3.添加ffi lib实现block转化为函数指针（对 tfthreadpool支持）
+ 4.添加TFHTTP
+ 5.删除TFPipe
+ */
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+

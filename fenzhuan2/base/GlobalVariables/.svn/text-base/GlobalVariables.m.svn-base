@@ -1,0 +1,44 @@
+//
+//  GlobalVariables.m
+//  TfClient
+//
+//  Created by crazycao on 14-10-16.
+//
+//
+
+#import "GlobalVariables.h"
+
+@implementation GlobalVariables
+
+@synthesize updateUrl;
+@synthesize updateTitle;
+
++ (GlobalVariables *)shared {
+    static GlobalVariables *instance = nil;
+    
+    if (instance == nil) {
+        instance = [[GlobalVariables alloc] init];
+        
+        instance.itemInfoDict = [[NSMutableDictionary alloc] init];
+        instance.wapFanliDict = [[NSMutableDictionary alloc] init];
+        instance.itemLikeStatusDict = [[NSMutableDictionary alloc] init];
+        instance.wapLikeStatusDict = [[NSMutableDictionary alloc] init];
+        instance.wapCanLikeDict = [[NSMutableDictionary alloc] init];
+        instance.wapSimpleWapFanliDtoDict = [[NSMutableDictionary alloc] init];
+        instance.wapItemSharedDict = [[NSMutableDictionary alloc] init];
+        instance.hotwordList = [[NSMutableArray alloc] init];
+    }
+    
+    return instance;
+}
+
+
+- (void)dealloc
+{
+    NSLog(@"%s", __func__);
+    
+}
+
+
+
+@end

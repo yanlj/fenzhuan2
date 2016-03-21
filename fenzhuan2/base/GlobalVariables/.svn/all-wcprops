@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/125913/svn/mobile/taofen8/iphone/branches/20160118/TfClient/Base/GlobalVariables
+END
+GlobalVariables.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/124774/svn/mobile/taofen8/iphone/branches/20160118/TfClient/Base/GlobalVariables/GlobalVariables.h
+END
+LongLivedVariables.h
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/125859/svn/mobile/taofen8/iphone/branches/20160118/TfClient/Base/GlobalVariables/LongLivedVariables.h
+END
+GlobalVariables.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/124774/svn/mobile/taofen8/iphone/branches/20160118/TfClient/Base/GlobalVariables/GlobalVariables.m
+END
+LongLivedVariables.m
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/125913/svn/mobile/taofen8/iphone/branches/20160118/TfClient/Base/GlobalVariables/LongLivedVariables.m
+END

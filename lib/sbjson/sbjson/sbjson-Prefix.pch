@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'sbjson' target in the 'sbjson' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
