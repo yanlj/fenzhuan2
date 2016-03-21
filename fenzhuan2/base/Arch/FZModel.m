@@ -23,12 +23,31 @@
 
 - (void)request{
     self.requesting = YES;
+    
+#ifndef staticJson
     NSDictionary *dict = [self fillCommonParams];
-    //    [self.netExcutor post:self.localRequestEndPoint body:dict];
-    
-    //    TFNetLog(@"\n{\nREQUEST\n%@?%@\n}\n", self.localRequestEndPoint, [TF8Model queryWithParam:dict]);
     [self.netExcutor postRequest:self.localRequestEndPoint body:[FZModel queryWithParam:dict]];
+#else
+    NSString *nameTitle = [self.requestDict objectForKeySafety:@"operationType"];
+    [self requestLocal:nameTitle];
+#endif
     
+}
+
+- (void)requestLocal:(NSString *)typeStr {
+    if (typeStr) {
+        NSString*path = [[NSBundle mainBundle] pathForResource:typeStr ofType:@"json"];
+        NSFileHandle*file = [NSFileHandle fileHandleForReadingAtPath:path];
+        NSData*data = [file readDataToEndOfFile];
+        
+//        NSError *error = nil;
+//        id JsonObject=[NSJSONSerialization JSONObjectWithData:data
+//                                                      options:NSJSONReadingAllowFragments
+//                                                        error:&error];
+        TFHTTPData *dataHttp = [[TFHTTPData alloc] init];
+        dataHttp.responseData = [NSMutableData dataWithData:data];
+        [self httpSuccess:dataHttp];
+    }
 }
 
 - (NSDictionary *)fillCommonParams{
@@ -378,7 +397,7 @@ const char *property_getTypeName(objc_property_t property) {
     NSString *time = [Top currentTime];
     NSString *sign = [TFCommand TFSignMd5:operateType time:time];
     
-    NSMutableDictionary *publicDict = [[TF8PublicData shared]getPublic];
+    NSMutableDictionary *publicDict = [[TF8PublicData shared] getPublic];
     
     NSMutableDictionary *mutableRequest = [NSMutableDictionary dictionaryWithDictionary:publicDict];
     

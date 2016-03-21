@@ -181,7 +181,7 @@ totalBytesExpectedToWrite:(NSInteger)totalBytesExpectedToWrite{
     if (HTTP_OK == httpData.statusCode) {
 
         NSString *value = [[httpData responseString] retain];
-        TFNetLog(@"\n{\nRESPONSE\nurl: %@\nresponse: %@\n}\n", [[httpData url] URLDecodedString], value);
+//        TFNetLog(@"\n{\nRESPONSE\nurl: %@\nresponse: %@\n}\n", [[httpData url] URLDecodedString], value);
         
         if (_delegate != nil) {
             Class currentClass = object_getClass(_delegate);

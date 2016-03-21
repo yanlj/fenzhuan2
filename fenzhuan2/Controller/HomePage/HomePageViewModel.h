@@ -7,7 +7,12 @@
 //
 
 #import "FZViewModel.h"
+#import "HomePageModel.h"
 
 @interface HomePageViewModel : FZViewModel
+
+@property(nonatomic, strong)HomePageModel *modelHomePage;
+
+- (void)getHomeValue:(NSDictionary *)homeValDic;
 
 @end

@@ -1,0 +1,1031 @@
+{
+    "bannerList": [
+                   {
+                   "bannerId": "2275",
+                   "imageUrl": "https://img.alicdn.com/imgextra/i4/1744004536/TB2Jdl8lVXXXXbCXXXXXXXXXXXX_!!1744004536.jpg",
+                   "skipEvent": {
+                   "arg": "http://m.taofen8.com/activity/taqing/?isApp=1&f=banner1&p=IPhone_V8.0",
+                   "args": [
+                            "踏青尝鲜换新衣"
+                            ],
+                   "eventType": "wl",
+                   "mobilePage": "banner1",
+                   "needLogin": "NO"
+                   }
+                   },
+                   {
+                   "bannerId": "2326",
+                   "imageUrl": "https://img.alicdn.com/imgextra/i4/1744004536/TB2_25wlVXXXXbPXXXXXXXXXXXX_!!1744004536.jpg",
+                   "skipEvent": {
+                   "arg": "pinpait_18048",
+                   "args": [],
+                   "eventType": "bd",
+                   "mobilePage": "banner2",
+                   "needLogin": "NO"
+                   }
+                   },
+                   {
+                   "bannerId": "2331",
+                   "imageUrl": "https://img.alicdn.com/imgextra/i1/1744004536/TB2UtaOlVXXXXXeXXXXXXXXXXXX_!!1744004536.jpg",
+                   "skipEvent": {
+                   "arg": "pinpait_18188",
+                   "args": [],
+                   "eventType": "bd",
+                   "mobilePage": "banner3",
+                   "needLogin": "NO"
+                   }
+                   },
+                   {
+                   "bannerId": "2332",
+                   "imageUrl": "https://img.alicdn.com/imgextra/i3/1744004536/TB282WrlVXXXXcQXXXXXXXXXXXX_!!1744004536.jpg",
+                   "skipEvent": {
+                   "arg": "pinpait_17904",
+                   "args": [],
+                   "eventType": "bd",
+                   "mobilePage": "banner4",
+                   "needLogin": "NO"
+                   }
+                   },
+                   {
+                   "bannerId": "2328",
+                   "imageUrl": "https://img.alicdn.com/imgextra/i1/1744004536/TB2ieGClVXXXXXdXpXXXXXXXXXX_!!1744004536.jpg",
+                   "skipEvent": {
+                   "arg": "http://m.taofen8.com/haihu/login?jump=%7B%22pk%22%3A%22global%22%7D&f=banner5&p=IPhone_V8.0",
+                   "args": [
+                            "海狐全球购"
+                            ],
+                   "eventType": "wl",
+                   "mobilePage": "banner5",
+                   "needLogin": "YES"
+                   }
+                   }
+                   ],
+    "blockList": [
+                  {
+                  "blockType": "8.0_3_1",
+                  "cellList": [
+                               {
+                               "cellEndTime": "2016-03-22 10:00:00",
+                               "cellId": "327",
+                               "imageUrl": "https://img.alicdn.com/imgextra/i4/1075205967/TB2WMVOmXXXXXaeXpXXXXXXXXXX_!!1075205967.png",
+                               "os": "",
+                               "restTime": "63250289",
+                               "skipEvent": {
+                               "arg": "best2",
+                               "args": [],
+                               "eventType": "tmb",
+                               "mobilePage": "block90",
+                               "needLogin": "NO"
+                               },
+                               "supportHaihuSdk": false
+                               },
+                               {
+                               "cellEndTime": "",
+                               "cellId": "329",
+                               "imageUrl": "https://img.alicdn.com/imgextra/i3/1075205967/TB26DhZmXXXXXciXXXXXXXXXXXX_!!1075205967.png",
+                               "os": "",
+                               "restTime": "",
+                               "skipEvent": {
+                               "arg": "http://m.taofen8.com/activity/today/dapaijaidao/?isApp=1&f=block90&p=IPhone_V8.0",
+                               "args": [
+                                        "大牌驾到"
+                                        ],
+                               "eventType": "wl",
+                               "mobilePage": "block90",
+                               "needLogin": "NO"
+                               },
+                               "supportHaihuSdk": false
+                               },
+                               {
+                               "cellEndTime": "",
+                               "cellId": "328",
+                               "imageUrl": "https://img.alicdn.com/imgextra/i4/556235561/TB2FQ6XlVXXXXcDXXXXXXXXXXXX_!!556235561.png",
+                               "os": "",
+                               "restTime": "",
+                               "skipEvent": {
+                               "arg": "http://m.taofen8.com/activity/today/xinbaicai/?isApp=1&f=block90&p=IPhone_V8.0",
+                               "args": [
+                                        "白菜党"
+                                        ],
+                               "eventType": "wl",
+                               "mobilePage": "block90",
+                               "needLogin": "NO"
+                               },
+                               "supportHaihuSdk": false
+                               }
+                               ],
+                  "idx": "28"
+                  },
+                  {
+                  "blockType": "8.0_1",
+                  "cellList": [
+                               {
+                               "cellEndTime": "",
+                               "cellId": "333",
+                               "imageUrl": "https://img.alicdn.com/imgextra/i3/2296013456/TB2BskdkVXXXXXUXpXXXXXXXXXX_!!2296013456.png",
+                               "os": "",
+                               "restTime": "",
+                               "skipEvent": {
+                               "arg": "http://m.taofen8.com/html/tmFanli.html?f=block91&p=IPhone_V8.0",
+                               "args": [
+                                        "天猫返利"
+                                        ],
+                               "eventType": "wl",
+                               "mobilePage": "block91",
+                               "needLogin": "YES"
+                               },
+                               "supportHaihuSdk": false
+                               }
+                               ],
+                  "idx": "20"
+                  }
+                  ],
+    "cookie": "",
+    "functionLayoutColumn": "5",
+    "functionList": [
+                     {
+                     "flagUrl": "",
+                     "functionId": "28",
+                     "iconUrl": "https://img.alicdn.com/imgextra/i1/83753324/TB2CBPokFXXXXblXXXXXXXXXXXX_!!83753324.png",
+                     "skipEvent": {
+                     "arg": "member_44",
+                     "args": [],
+                     "eventType": "sid",
+                     "mobilePage": "icon",
+                     "needLogin": "NO"
+                     },
+                     "title": "超高返"
+                     },
+                     {
+                     "flagUrl": "",
+                     "functionId": "29",
+                     "iconUrl": "https://img.alicdn.com/imgextra/i1/83753324/TB2fa2tkFXXXXaGXXXXXXXXXXXX_!!83753324.png",
+                     "skipEvent": {
+                     "arg": "",
+                     "args": [],
+                     "eventType": "br",
+                     "mobilePage": "icon",
+                     "needLogin": "NO"
+                     },
+                     "title": "品牌特卖"
+                     },
+                     {
+                     "flagUrl": "",
+                     "functionId": "30",
+                     "iconUrl": "https://img.alicdn.com/imgextra/i2/83753324/TB2CUi7kFXXXXa9XpXXXXXXXXXX_!!83753324.png",
+                     "skipEvent": {
+                     "arg": "member_45",
+                     "args": [],
+                     "eventType": "sid",
+                     "mobilePage": "icon",
+                     "needLogin": "NO"
+                     },
+                     "title": "9块9"
+                     },
+                     {
+                     "flagUrl": "",
+                     "functionId": "31",
+                     "iconUrl": "https://img.alicdn.com/imgextra/i2/83753324/TB2eujokFXXXXbkXXXXXXXXXXXX_!!83753324.png",
+                     "skipEvent": {
+                     "arg": "{\"pk\":\"index\"}",
+                     "args": [],
+                     "eventType": "hn",
+                     "mobilePage": "icon",
+                     "needLogin": "YES"
+                     },
+                     "title": "海外直供"
+                     },
+                     {
+                     "flagUrl": "",
+                     "functionId": "33",
+                     "iconUrl": "https://img.alicdn.com/imgextra/i2/83753324/TB2LucukVXXXXcBXXXXXXXXXXXX_!!83753324.png",
+                     "skipEvent": {
+                     "arg": "",
+                     "args": [],
+                     "eventType": "ma",
+                     "mobilePage": "icon",
+                     "needLogin": "NO"
+                     },
+                     "title": "商城返利"
+                     }
+                     ],
+    "hotwordList": [
+                    {
+                    "color": "#666666",
+                    "isHot": "NO",
+                    "text": "手机"
+                    },
+                    {
+                    "color": "#f53e7b",
+                    "isHot": "YES",
+                    "text": "连衣裙"
+                    },
+                    {
+                    "color": "#666666",
+                    "isHot": "NO",
+                    "text": "女包"
+                    },
+                    {
+                    "color": "#666666",
+                    "isHot": "NO",
+                    "text": "男鞋"
+                    },
+                    {
+                    "color": "#666666",
+                    "isHot": "NO",
+                    "text": "风衣"
+                    },
+                    {
+                    "color": "#f53e7b",
+                    "isHot": "YES",
+                    "text": "打底衫"
+                    },
+                    {
+                    "color": "#666666",
+                    "isHot": "NO",
+                    "text": "沙发"
+                    },
+                    {
+                    "color": "#666666",
+                    "isHot": "NO",
+                    "text": "手表"
+                    },
+                    {
+                    "color": "#666666",
+                    "isHot": "NO",
+                    "text": "卫衣"
+                    }
+                    ],
+    "memo": "处理成功",
+    "needUpdateAlipay": "NO",
+    "notification": "",
+    "notificationArgument": "",
+    "notificationTitle": "",
+    "pageNo": "1",
+    "pageSize": "0",
+    "recommendCategoryList": [
+                              {
+                              "cid": "0",
+                              "title": "全部"
+                              },
+                              {
+                              "cid": "300",
+                              "title": "女装"
+                              },
+                              {
+                              "cid": "370",
+                              "title": "男装"
+                              },
+                              {
+                              "cid": "380",
+                              "title": "内衣"
+                              },
+                              {
+                              "cid": "310",
+                              "title": "美妆"
+                              },
+                              {
+                              "cid": "320",
+                              "title": "居家"
+                              },
+                              {
+                              "cid": "330",
+                              "title": "母婴"
+                              },
+                              {
+                              "cid": "340",
+                              "title": "食品"
+                              },
+                              {
+                              "cid": "350",
+                              "title": "鞋包配饰"
+                              },
+                              {
+                              "cid": "360",
+                              "title": "数码电器"
+                              },
+                              {
+                              "cid": "390",
+                              "title": "文体户外"
+                              }
+                              ],
+    "recommendCount": "1249",
+    "recommendList": [
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "16.12"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i1/1807691551/TB2_TJ9lVXXXXcvXpXXXXXXXXXX_!!1807691551.png_250x250.jpg",
+                      "itemId": "523411376308",
+                      "price": "¥19.9",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥19.9"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/523411376308?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "523411376308",
+                               "19.9",
+                               "YES",
+                               "http://m.taofen8.com/item2/523411376308?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：81.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "苹果5/6/6s数据线"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "33.54"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "http://img4.tbcdn.cn/tfscom/i4/TB1C3kGLVXXXXapXFXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg",
+                      "itemId": "528441217024",
+                      "price": "¥59.9",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥59.9"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/528441217024?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "528441217024",
+                               "59.9",
+                               "YES",
+                               "http://m.taofen8.com/item2/528441217024?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：56.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "怡丽卫生巾日夜共9包"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "21.53"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i4/65798045/TB291JPmXXXXXacXpXXXXXXXXXX_!!65798045.jpg_250x250.jpg",
+                      "itemId": "528310113372",
+                      "price": "¥29.9",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥29.9"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/528310113372?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "528310113372",
+                               "29.9",
+                               "YES",
+                               "http://m.taofen8.com/item2/528310113372?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：72.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "夏季中小童短袖T恤"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "国内价"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "YES",
+                                         "text": "42.0"
+                                         }
+                                         ],
+                      "flagUrl": "http://img.haihu.com/01150812cd7924d453274a2bb141fede61107b6f.png",
+                      "imageUrl": "http://img.haihu.com/01160311610fee24dd7148d2a9007fa9b87a220d.jpg",
+                      "itemId": "HH1153",
+                      "price": "",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥16.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "{\"pk\":\"wap\",\"url\":\"http://m.haihu.com/groupzt.html?source=0&inner=yes&theme_id=523\"}",
+                      "args": [],
+                      "eventType": "hn",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "YES"
+                      },
+                      "title": "百奇 Pocky 熊猫白巧克力饼干棒 42g*2盒，最佳食用期限为2016.09."
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "21.84"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i4/1590022038/TB2Gdt2mXXXXXczXXXXXXXXXXXX_!!1590022038.jpg_250x250.jpg",
+                      "itemId": "528175471472",
+                      "price": "¥39.0",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥39.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/528175471472?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "528175471472",
+                               "39.0",
+                               "YES",
+                               "http://m.taofen8.com/item2/528175471472?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：56.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "100%纯棉印花运动七分裤"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "38.08"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i2/1804038083/TB2JFKcmXXXXXXVXXXXXXXXXXXX_!!1804038083.jpg_250x250.jpg",
+                      "itemId": "528271691870",
+                      "price": "¥68.0",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥68.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/528271691870?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "528271691870",
+                               "68.0",
+                               "YES",
+                               "http://m.taofen8.com/item2/528271691870?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：56.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "志高大风力静音台扇"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "27.44"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i1/2745456202/TB2fc.clpXXXXaYXpXXXXXXXXXX_!!2745456202.jpg_250x250.jpg",
+                      "itemId": "526971985003",
+                      "price": "¥49.0",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥49.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/526971985003?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "526971985003",
+                               "49.0",
+                               "YES",
+                               "http://m.taofen8.com/item2/526971985003?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：56.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "正宗烟熏五花腊肉500g"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "国内价"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "YES",
+                                         "text": "115.0"
+                                         }
+                                         ],
+                      "flagUrl": "http://img.haihu.com/0115081215b9c775dfbb4f8aaaaa94582721538b.png",
+                      "imageUrl": "http://img.haihu.com/011603184a14cdbc7b534c58baaca75a0e901fff.png",
+                      "itemId": "HH1147",
+                      "price": "",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥14.9"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "{\"pk\":\"wap\",\"url\":\"http://m.haihu.com/groupzt.html?source=0&inner=yes&theme_id=525\"}",
+                      "args": [],
+                      "eventType": "hn",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "YES"
+                      },
+                      "title": "3片装|瑞花美人 优质雪美白面膜 30g/片"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "6.61"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i3/1968081280/TB24jsWlFXXXXaiXpXXXXXXXXXX_!!1968081280.jpg_250x250.jpg",
+                      "itemId": "528281881879",
+                      "price": "¥11.8",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥11.8"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/528281881879?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "528281881879",
+                               "11.8",
+                               "YES",
+                               "http://m.taofen8.com/item2/528281881879?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：56.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "高密纯棉柔软枕套"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "14.78"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "http://img3.tbcdn.cn/tfscom/i3/TB1MewdLVXXXXcBaXXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg",
+                      "itemId": "525137750564",
+                      "price": "¥29.8",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥29.8"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/525137750564?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "525137750564",
+                               "29.8",
+                               "YES",
+                               "http://m.taofen8.com/item2/525137750564?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：49.60%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "烟台红富士果径80mm5斤"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "9.07"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i3/2736891086/TB288gglFXXXXb6XXXXXXXXXXXX_!!2736891086.jpg_250x250.jpg",
+                      "itemId": "527984460548",
+                      "price": "¥16.8",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥16.8"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/527984460548?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "527984460548",
+                               "16.8",
+                               "YES",
+                               "http://m.taofen8.com/item2/527984460548?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：54.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "爱香妃和田玉枣500g"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "国内价"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "YES",
+                                         "text": "69.0"
+                                         }
+                                         ],
+                      "flagUrl": "http://img.haihu.com/0115081215b9c775dfbb4f8aaaaa94582721538b.png",
+                      "imageUrl": "http://img.haihu.com/01160314e34c64ba30e74f71bece6131fba9d256.png",
+                      "itemId": "HH1150",
+                      "price": "",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥39.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "{\"pk\":\"wap\",\"url\":\"http://m.haihu.com/groupzt.html?source=0&inner=yes&theme_id=558\"}",
+                      "args": [],
+                      "eventType": "hn",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "YES"
+                      },
+                      "title": "LG ON：THE BODY 紫色香水沐浴露 500ml"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "21.06"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i1/2077676003/TB2cXOglpXXXXbCXXXXXXXXXXXX_!!2077676003.jpg_250x250.jpg",
+                      "itemId": "41189411363",
+                      "price": "¥26.0",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥26.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/41189411363?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "41189411363",
+                               "26.0",
+                               "YES",
+                               "http://m.taofen8.com/item2/41189411363?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：81.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "袋鼠紧身运动健身汗背心"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "29.07"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i3/921705597/TB2k.cclFXXXXcIXXXXXXXXXXXX_!!921705597.jpg_250x250.jpg",
+                      "itemId": "40772260772",
+                      "price": "¥38.0",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥38.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/40772260772?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "40772260772",
+                               "38.0",
+                               "YES",
+                               "http://m.taofen8.com/item2/40772260772?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：76.50%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "袋鼠男士平角内裤3条"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "#f53e7b",
+                                         "color": "#FFFFFF",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "返"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "10.53"
+                                         }
+                                         ],
+                      "flagUrl": "",
+                      "imageUrl": "https://img.alicdn.com/imgextra/i4/902944118/TB25f17lVXXXXaPXpXXXXXXXXXX_!!902944118.jpg_250x250.jpg",
+                      "itemId": "45606304314",
+                      "price": "¥39.0",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#000000",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥39.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "http://m.taofen8.com/item/45606304314?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                      "args": [
+                               "45606304314",
+                               "39.0",
+                               "YES",
+                               "http://m.taofen8.com/item2/45606304314?f=homePage_chaogaofan&p=IPhone_V8.0&ttid=400000_12450255@taofen8_iphone_v8.0&sid=null",
+                               "返利比例：27.00%"
+                               ],
+                      "eventType": "bl",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "NO"
+                      },
+                      "title": "幸运谷五常大米9斤"
+                      },
+                      {
+                      "fanliTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "国内价"
+                                         },
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#999999",
+                                         "isBold": "",
+                                         "lineThrough": "YES",
+                                         "text": "120.0"
+                                         }
+                                         ],
+                      "flagUrl": "http://img.haihu.com/01150812cd7924d453274a2bb141fede61107b6f.png",
+                      "imageUrl": "http://img.haihu.com/01160309821697432323498b92e2af5fe29fc4b7.png",
+                      "itemId": "HH1152",
+                      "price": "",
+                      "priceTextArray": [
+                                         {
+                                         "backgroundColor": "",
+                                         "color": "#f53e7b",
+                                         "isBold": "",
+                                         "lineThrough": "NO",
+                                         "text": "¥39.0"
+                                         }
+                                         ],
+                      "skipEvent": {
+                      "arg": "{\"pk\":\"wap\",\"url\":\"http://m.haihu.com/groupzt.html?source=0&inner=yes&theme_id=485\"}",
+                      "args": [],
+                      "eventType": "hn",
+                      "mobilePage": "homePage_chaogaofan",
+                      "needLogin": "YES"
+                      },
+                      "title": "熊野马油无硅洗发水600ml"
+                      }
+                      ],
+    "recommendTextArray": [],
+    "recommendTitle": "超高返精选",
+    "resultStatus": "100",
+    "searchFlag": "newHomePage",
+    "searchHint": "复制商品标题 拿返利",
+    "searchTip": "搜索结果都有返利，聚划算也有补贴啦！",
+    "timeStamp": "0",
+    "totalPage": "123",
+    "updateTexts": [
+                    "淘粉吧共为用户\n返利3亿元",
+                    "是一家全国领先的\n返利网站",
+                    "返利就是钱\n直接可以抵扣",
+                    "前2天吴二狗\n买了个电饭锅返利80%",
+                    "全村杀了2头牛庆祝",
+                    "到头了~别拉了人家疼",
+                    "我是彩蛋！省钱是一种态度，别忘了幸福是什么..."
+                    ],
+    "updateTitle": "",
+    "updateUrl": "",
+    "updateVersion": ""
+}

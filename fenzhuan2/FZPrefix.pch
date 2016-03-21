@@ -26,6 +26,8 @@
     #import "FZEntity.h"
     #import "TF8PublicData.h"
     #import "LongLivedVariables.h"
+    #import "NS2TFExtend.h"
+    #import "NSString+Empty.h"
 #endif
 
 #endif /* FZPrefix_pch */

@@ -9,6 +9,8 @@
 #ifndef CONSTANT_h
 #define CONSTANT_h
 
+#define staticJson //本地静态数据
+
 #define RGBCOLOR(r,g,b)             [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
 #define RGBACOLOR(r,g,b,a)          [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define COLOR_CSS(__hex__)  [UIColor colorWithRed:((float)((__hex__ & 0xFF0000) >> 16))/255.0 \
